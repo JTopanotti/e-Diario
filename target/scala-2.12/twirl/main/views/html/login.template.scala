@@ -30,23 +30,32 @@ object login extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
       {
 
 
-Seq[Any](format.raw/*1.1*/("""<div class="container-fluid">
-    <h2>e-Diario Login</h2>
-    <div class="container-img">
-        <img src=""""),_display_(/*4.20*/routes/*4.26*/.Assets.versioned("images/user.png")),format.raw/*4.62*/("""" alt="Avatar" class="avatar">
+Seq[Any](format.raw/*1.1*/("""<head>
+    <link rel="stylesheet" href=""""),_display_(/*2.35*/routes/*2.41*/.Assets.versioned("stylesheets/bootstrap/css/bootstrap.css")),format.raw/*2.101*/("""">
+    <style>
+        .form-login"""),format.raw/*4.20*/("""{"""),format.raw/*4.21*/("""
+          """),format.raw/*5.11*/("""margin-top: 50px;
+        """),format.raw/*6.9*/("""}"""),format.raw/*6.10*/("""
+    """),format.raw/*7.5*/("""</style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+	    <h1>e-Diario Login</h2>
+	    <p>Insira os credenciais de logn</p>
+	</div>
+    <div class="text-center">
+        <img class="img-responsive center-block" src=""""),_display_(/*15.56*/routes/*15.62*/.Assets.versioned("images/user2.png")),format.raw/*15.99*/("""" alt="Avatar" class="avatar">
     </div>
-
+<div class="container">
     <form>
-       <div class="container-fluid">
-           <label><b>Usuario</b></label>
-           <input type="text" placeholder="Digite o usuario" name="user" required>
-           <label><b>Senha</b></label>
-           <input type="password" placeholder="Digite a senha" name="psw" required>
-
-           <button type="submit">Login</button>
-       </div>
+        <div class="form-login text-center">
+        <div><input type="text" placeholder="Digite o usuario" name="user" required></div>
+        <div><input type="password" placeholder="Digite a senha" name="psw" required></div>
+        <div><button class="btn btn-primary" type="submit">Login</button></div>
+        </div
     </form>
 </div>
+</body>
 """))
       }
     }
@@ -63,11 +72,11 @@ Seq[Any](format.raw/*1.1*/("""<div class="container-fluid">
 
               /*
                   -- GENERATED --
-                  DATE: Sun Sep 17 12:33:45 BRT 2017
+                  DATE: Sun Sep 17 19:02:41 BRT 2017
                   SOURCE: /home/jonathan/Workspace/e-diario/app/views/login.scala.html
-                  HASH: 98fa53dc593d9dd26c9da54eab1df0feca4e0447
-                  MATRIX: 1030->0|1165->109|1179->115|1235->151
-                  LINES: 33->1|36->4|36->4|36->4
+                  HASH: 35e15c6034c1cf5dc55c45abda60006f3c822aa9
+                  MATRIX: 1030->0|1097->41|1111->47|1192->107|1253->141|1281->142|1319->153|1371->179|1399->180|1430->185|1685->413|1700->419|1758->456
+                  LINES: 33->1|34->2|34->2|34->2|36->4|36->4|37->5|38->6|38->6|39->7|47->15|47->15|47->15
                   -- GENERATED --
               */
           

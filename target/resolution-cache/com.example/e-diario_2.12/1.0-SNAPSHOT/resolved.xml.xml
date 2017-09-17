@@ -4,7 +4,7 @@
 		module="e-diario_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170917113646"
+		publication="20170917145724"
 	>
 		<description>
 		e-diario
@@ -51,5 +51,6 @@
 		<dependency org="com.typesafe.play" name="play-logback_2.12" rev="2.6.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-akka-http-server_2.12" rev="2.6.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-guice_2.12" rev="2.6.3" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="bootstrap" rev="3.3.6" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
