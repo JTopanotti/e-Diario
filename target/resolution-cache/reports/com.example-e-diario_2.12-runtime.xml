@@ -7,27 +7,27 @@
 		revision="1.0-SNAPSHOT"
 		conf="runtime"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170917145724"/>
+		date="20170920232318"/>
 	<dependencies>
 		<module organisation="org.webjars" name="bootstrap">
-			<revision name="3.3.6" status="release" pubdate="20151127160647" resolver="public" artresolver="public" homepage="http://webjars.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="63">
+			<revision name="3.3.6" status="release" pubdate="20151127160647" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="successful" details="" size="7380" time="856" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/ivy-3.3.6.xml" searched="true" original-local-location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/ivy-3.3.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.6/bootstrap-3.3.6.pom"/>
+				<metadata-artifact status="no" details="" size="4059" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/ivy-3.3.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.6/bootstrap-3.3.6.pom"/>
 				<caller organisation="com.example" name="e-diario_2.12" conf="compile, runtime" rev="3.3.6" rev-constraint-default="3.3.6" rev-constraint-dynamic="3.3.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="bootstrap" type="jar" ext="jar" status="successful" details="" size="662231" time="4105" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar">
+					<artifact name="bootstrap" type="jar" ext="jar" status="no" details="" size="662231" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.6/bootstrap-3.3.6.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.webjars" name="jquery">
-			<revision name="1.11.1" status="release" pubdate="20140503151849" resolver="public" artresolver="public" homepage="http://webjars.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+			<revision name="1.11.1" status="release" pubdate="20140503151849" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
 				<license name="MIT License" url="https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt"/>
-				<metadata-artifact status="successful" details="" size="6956" time="841" location="/home/jonathan/.ivy2/cache/org.webjars/jquery/ivy-1.11.1.xml" searched="true" original-local-location="/home/jonathan/.ivy2/cache/org.webjars/jquery/ivy-1.11.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/jquery/1.11.1/jquery-1.11.1.pom"/>
+				<metadata-artifact status="no" details="" size="3754" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/jquery/ivy-1.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/jquery/1.11.1/jquery-1.11.1.pom"/>
 				<caller organisation="org.webjars" name="bootstrap" conf="default, compile, runtime, master" rev="1.11.1" rev-constraint-default="1.11.1" rev-constraint-dynamic="1.11.1" callerrev="3.3.6"/>
 				<artifacts>
-					<artifact name="jquery" type="jar" ext="jar" status="successful" details="" size="178233" time="1559" location="/home/jonathan/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar">
+					<artifact name="jquery" type="jar" ext="jar" status="no" details="" size="178233" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/jquery/1.11.1/jquery-1.11.1.jar"/>
 					</artifact>
 				</artifacts>

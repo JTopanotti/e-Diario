@@ -1,5 +1,6 @@
-@()
+import modelos.InfoUsuario._
+@(pagina : String, estaLogado : Boolean, infoUsuario: InfoUsuario)
 
-@main("Welcome to Play") {
+@main(pagina, estaLogado, infoUsuario) {
   <h1>Welcome to Play!</h1>
 }

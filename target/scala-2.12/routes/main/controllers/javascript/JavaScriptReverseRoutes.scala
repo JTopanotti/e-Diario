@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/jonathan/Workspace/e-diario/conf/routes
-// @DATE:Sun Sep 17 12:31:00 BRT 2017
+// @SOURCE:/home/jonathan/Workspace/e-Diario/conf/routes
+// @DATE:Sun Sep 24 22:32:11 BRT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -30,9 +30,29 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:7
+    def postLogin: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.postLogin",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+        }
+      """
+    )
+  
+    // @LINE:8
+    def perfil: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.perfil",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "profile"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:9
+  // @LINE:11
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -40,7 +60,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:9
+    // @LINE:11
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/jonathan/Workspace/e-diario/conf/routes
-// @DATE:Sun Sep 17 12:31:00 BRT 2017
+// @SOURCE:/home/jonathan/Workspace/e-Diario/conf/routes
+// @DATE:Sun Sep 24 22:32:11 BRT 2017
 
 package controllers;
 

@@ -25,16 +25,17 @@ import play.core.j.PlayFormsMagicForJava._
 object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/():play.twirl.api.HtmlFormat.Appendable = {
+  def apply():play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.4*/("""
+Seq[Any](format.raw/*1.1*/("""import modelos.InfoUsuario._
+"""),_display_(/*2.2*/(pagina : String, estaLogado : Boolean, infoUsuario: InfoUsuario)),format.raw/*2.67*/("""
 
-"""),_display_(/*3.2*/main("Welcome to Play")/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
-  """),format.raw/*4.3*/("""<h1>Welcome to Play!</h1>
-""")))}),format.raw/*5.2*/("""
+"""),_display_(/*4.2*/main(pagina, estaLogado, infoUsuario)/*4.39*/ {_display_(Seq[Any](format.raw/*4.41*/("""
+  """),format.raw/*5.3*/("""<h1>Welcome to Play!</h1>
+""")))}),format.raw/*6.2*/("""
 """))
       }
     }
@@ -51,11 +52,11 @@ Seq[Any](format.raw/*1.4*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun Sep 17 12:18:59 BRT 2017
-                  SOURCE: /home/jonathan/Workspace/e-diario/app/views/index.scala.html
-                  HASH: 101fa511ddebe89cb9bf324b96e228b7b59b8d04
-                  MATRIX: 941->1|1037->3|1065->6|1096->29|1135->31|1164->34|1220->61
-                  LINES: 28->1|33->1|35->3|35->3|35->3|36->4|37->5
+                  DATE: Sun Sep 24 22:32:10 BRT 2017
+                  SOURCE: /home/jonathan/Workspace/e-Diario/app/views/index.scala.html
+                  HASH: 7c419611b545e9b4d6a38c5a9b304008bf89d4fb
+                  MATRIX: 1030->0|1085->30|1170->95|1198->98|1243->135|1282->137|1311->140|1367->167
+                  LINES: 33->1|34->2|34->2|36->4|36->4|36->4|37->5|38->6
                   -- GENERATED --
               */
           

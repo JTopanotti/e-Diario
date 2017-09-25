@@ -1,0 +1,32 @@
+package controllers;
+
+import modelos.InfoUsuario;
+import modelos.InfoUsuarioDB;
+import play.mvc.Result;
+import play.mvc.Security;
+import play.mvc.Http.Context;
+
+public class Autenticacao extends Security.Authenticator {
+	
+	@Override
+	public String getUsername(Context ctx) {
+		return ctx.session().get("usuario");
+	}
+	
+	@Override
+	public Result onUnauthorized(Context ctx){
+		return redirect(routes.HomeController.login());
+	}
+	
+	public static String getUser(Context ctx) {
+		return ctx.session().get("usuario");
+	}
+	
+	public static boolean isLoggedIn(Context ctx) {
+		return (getUser(ctx) != null);
+	}
+	
+	public static InfoUsuario getInfoUsuario(Context ctx) {
+		return (isLoggedIn(ctx) ? InfoUsuarioDB.getUsuario(getUser(ctx)) : null);
+	}
+}
