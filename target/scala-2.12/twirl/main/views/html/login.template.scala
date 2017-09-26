@@ -21,6 +21,7 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
+import modelos.InfoUsuario
 
 object login extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[Form[modelos.FormularioLogin],play.twirl.api.HtmlFormat.Appendable] {
 
@@ -77,11 +78,11 @@ Seq[Any](format.raw/*1.51*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun Sep 24 14:23:33 BRT 2017
-                  SOURCE: /home/jonathan/Workspace/e-Diario/app/views/login.scala.html
-                  HASH: a2613b7ecf5514f4f64a04e87414363af6b4c78f
-                  MATRIX: 971->1|1115->50|1143->52|1210->93|1224->99|1305->159|1366->193|1394->194|1432->205|1484->231|1512->232|1543->237|1800->467|1815->473|1873->510|1997->608|2081->671|2113->676
-                  LINES: 28->1|33->1|35->3|36->4|36->4|36->4|38->6|38->6|39->7|40->8|40->8|41->9|49->17|49->17|49->17|52->20|52->20|53->21
+                  DATE: Mon Sep 25 20:48:24 BRT 2017
+                  SOURCE: /home/jonathan/workspace/e-Diario/app/views/login.scala.html
+                  HASH: 6df31ecb602c9ee6aa39293e95e79da557f8ca9e
+                  MATRIX: 998->1|1142->50|1170->52|1237->93|1251->99|1332->159|1393->193|1421->194|1459->205|1511->231|1539->232|1570->237|1827->467|1842->473|1900->510|2024->608|2108->671|2140->676
+                  LINES: 29->1|34->1|36->3|37->4|37->4|37->4|39->6|39->6|40->7|41->8|41->8|42->9|50->17|50->17|50->17|53->20|53->20|54->21
                   -- GENERATED --
               */
           

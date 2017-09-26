@@ -7,18 +7,18 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170920232342"/>
+		date="20170925192311"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-java-forms_2.12">
-			<revision name="2.6.3" status="release" pubdate="20170811170516" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="54">
+			<revision name="2.6.3" status="release" pubdate="20170811170516" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="55">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="6003" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java-forms_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-forms_2.12/2.6.3/play-java-forms_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-java-forms_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="712838" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java-forms_2.12/docs/play-java-forms_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-java-forms_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="712838" time="37920" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java-forms_2.12/docs/play-java-forms_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-forms_2.12/2.6.3/play-java-forms_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
-					<artifact name="play-java-forms_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27417" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java-forms_2.12/srcs/play-java-forms_2.12-2.6.3-sources.jar">
+					<artifact name="play-java-forms_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="27417" time="1346" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java-forms_2.12/srcs/play-java-forms_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-forms_2.12/2.6.3/play-java-forms_2.12-2.6.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -30,10 +30,10 @@
 				<metadata-artifact status="no" details="" size="4059" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/ivy-3.3.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.6/bootstrap-3.3.6.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="3.3.6" rev-constraint-default="3.3.6" rev-constraint-dynamic="3.3.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="bootstrap" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3995" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/srcs/bootstrap-3.3.6-sources.jar">
+					<artifact name="bootstrap" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3995" time="1506" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/srcs/bootstrap-3.3.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.6/bootstrap-3.3.6-sources.jar"/>
 					</artifact>
-					<artifact name="bootstrap" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="641129" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/docs/bootstrap-3.3.6-javadoc.jar">
+					<artifact name="bootstrap" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="641129" time="16735" location="/home/jonathan/.ivy2/cache/org.webjars/bootstrap/docs/bootstrap-3.3.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.6/bootstrap-3.3.6-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -45,10 +45,10 @@
 				<metadata-artifact status="no" details="" size="4858" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-context/ivy-4.3.9.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.9.RELEASE/spring-context-4.3.9.RELEASE.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="4.3.9.RELEASE" rev-constraint-default="4.3.9.RELEASE" rev-constraint-dynamic="4.3.9.RELEASE" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="spring-context" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2566718" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-context/docs/spring-context-4.3.9.RELEASE-javadoc.jar">
+					<artifact name="spring-context" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2566718" time="40196" location="/home/jonathan/.ivy2/cache/org.springframework/spring-context/docs/spring-context-4.3.9.RELEASE-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.9.RELEASE/spring-context-4.3.9.RELEASE-javadoc.jar"/>
 					</artifact>
-					<artifact name="spring-context" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1137787" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-context/srcs/spring-context-4.3.9.RELEASE-sources.jar">
+					<artifact name="spring-context" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1137787" time="45713" location="/home/jonathan/.ivy2/cache/org.springframework/spring-context/srcs/spring-context-4.3.9.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.9.RELEASE/spring-context-4.3.9.RELEASE-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -60,10 +60,10 @@
 				<metadata-artifact status="no" details="" size="3275" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.12/2.6.3/play-akka-http-server_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-akka-http-server_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="675201" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/docs/play-akka-http-server_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-akka-http-server_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="675201" time="24506" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/docs/play-akka-http-server_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.12/2.6.3/play-akka-http-server_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
-					<artifact name="play-akka-http-server_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15989" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/srcs/play-akka-http-server_2.12-2.6.3-sources.jar">
+					<artifact name="play-akka-http-server_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15989" time="1164" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/srcs/play-akka-http-server_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.12/2.6.3/play-akka-http-server_2.12-2.6.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -75,7 +75,8 @@
 				<metadata-artifact status="no" details="" size="3754" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/jquery/ivy-1.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/jquery/1.11.1/jquery-1.11.1.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.11.1" rev-constraint-default="1.11.1" rev-constraint-dynamic="1.11.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jquery" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3586" time="0" location="/home/jonathan/.ivy2/cache/org.webjars/jquery/srcs/jquery-1.11.1-sources.jar">
+					<artifact name="jquery" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="jquery" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3586" time="743" location="/home/jonathan/.ivy2/cache/org.webjars/jquery/srcs/jquery-1.11.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/jquery/1.11.1/jquery-1.11.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -87,25 +88,25 @@
 				<metadata-artifact status="no" details="" size="3568" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/ivy-10.0.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.0.9/akka-http-core_2.12-10.0.9.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="10.0.9" rev-constraint-default="10.0.9" rev-constraint-dynamic="10.0.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="akka-http-core_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="6225892" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/docs/akka-http-core_2.12-10.0.9-javadoc.jar">
+					<artifact name="akka-http-core_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="6225892" time="30063" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/docs/akka-http-core_2.12-10.0.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.0.9/akka-http-core_2.12-10.0.9-javadoc.jar"/>
 					</artifact>
-					<artifact name="akka-http-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="389383" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/srcs/akka-http-core_2.12-10.0.9-sources.jar">
+					<artifact name="akka-http-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="389383" time="988" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/srcs/akka-http-core_2.12-10.0.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.0.9/akka-http-core_2.12-10.0.9-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-parsing_2.12">
-			<revision name="10.0.9" status="release" pubdate="20170626121606" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+			<revision name="10.0.9" status="release" pubdate="20170626121606" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
 				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
 				<metadata-artifact status="no" details="" size="2947" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/ivy-10.0.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.0.9/akka-parsing_2.12-10.0.9.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="10.0.9" rev-constraint-default="10.0.9" rev-constraint-dynamic="10.0.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="akka-parsing_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2106158" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/docs/akka-parsing_2.12-10.0.9-javadoc.jar">
+					<artifact name="akka-parsing_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2106158" time="31023" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/docs/akka-parsing_2.12-10.0.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.0.9/akka-parsing_2.12-10.0.9-javadoc.jar"/>
 					</artifact>
-					<artifact name="akka-parsing_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63824" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/srcs/akka-parsing_2.12-10.0.9-sources.jar">
+					<artifact name="akka-parsing_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="63824" time="1349" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/srcs/akka-parsing_2.12-10.0.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.0.9/akka-parsing_2.12-10.0.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -117,10 +118,10 @@
 				<metadata-artifact status="no" details="" size="3193" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-beans/ivy-4.3.9.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.9.RELEASE/spring-beans-4.3.9.RELEASE.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="4.3.9.RELEASE" rev-constraint-default="4.3.9.RELEASE" rev-constraint-dynamic="4.3.9.RELEASE" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="spring-beans" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1474392" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-beans/docs/spring-beans-4.3.9.RELEASE-javadoc.jar">
+					<artifact name="spring-beans" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1474392" time="28731" location="/home/jonathan/.ivy2/cache/org.springframework/spring-beans/docs/spring-beans-4.3.9.RELEASE-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.9.RELEASE/spring-beans-4.3.9.RELEASE-javadoc.jar"/>
 					</artifact>
-					<artifact name="spring-beans" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="726816" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-beans/srcs/spring-beans-4.3.9.RELEASE-sources.jar">
+					<artifact name="spring-beans" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="726816" time="3734" location="/home/jonathan/.ivy2/cache/org.springframework/spring-beans/srcs/spring-beans-4.3.9.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.9.RELEASE/spring-beans-4.3.9.RELEASE-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -132,22 +133,23 @@
 				<metadata-artifact status="no" details="" size="25833" time="0" location="/home/jonathan/.ivy2/cache/org.hibernate/hibernate-validator/ivy-5.4.1.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.4.1.Final/hibernate-validator-5.4.1.Final.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="5.4.1.Final" rev-constraint-default="5.4.1.Final" rev-constraint-dynamic="5.4.1.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="hibernate-validator" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="588867" time="0" location="/home/jonathan/.ivy2/cache/org.hibernate/hibernate-validator/srcs/hibernate-validator-5.4.1.Final-sources.jar">
+					<artifact name="hibernate-validator" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="hibernate-validator" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="588867" time="10543" location="/home/jonathan/.ivy2/cache/org.hibernate/hibernate-validator/srcs/hibernate-validator-5.4.1.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.4.1.Final/hibernate-validator-5.4.1.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.jboss.logging" name="jboss-logging">
-			<revision name="3.3.0.Final" status="release" pubdate="20150528134939" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jboss.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+			<revision name="3.3.0.Final" status="release" pubdate="20150528134939" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jboss.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
 				<license name="Apache License, version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="9486" time="0" location="/home/jonathan/.ivy2/cache/org.jboss.logging/jboss-logging/ivy-3.3.0.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="3.3.0.Final" rev-constraint-default="3.3.0.Final" rev-constraint-dynamic="3.3.0.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jboss-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53070" time="0" location="/home/jonathan/.ivy2/cache/org.jboss.logging/jboss-logging/srcs/jboss-logging-3.3.0.Final-sources.jar">
+					<artifact name="jboss-logging" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="53070" time="835" location="/home/jonathan/.ivy2/cache/org.jboss.logging/jboss-logging/srcs/jboss-logging-3.3.0.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final-sources.jar"/>
 					</artifact>
-					<artifact name="jboss-logging" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="158810" time="0" location="/home/jonathan/.ivy2/cache/org.jboss.logging/jboss-logging/docs/jboss-logging-3.3.0.Final-javadoc.jar">
+					<artifact name="jboss-logging" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="158810" time="967" location="/home/jonathan/.ivy2/cache/org.jboss.logging/jboss-logging/docs/jboss-logging-3.3.0.Final-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -159,10 +161,10 @@
 				<metadata-artifact status="no" details="" size="3200" time="0" location="/home/jonathan/.ivy2/cache/javax.validation/validation-api/ivy-1.1.0.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="validation-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="536613" time="0" location="/home/jonathan/.ivy2/cache/javax.validation/validation-api/docs/validation-api-1.1.0.Final-javadoc.jar">
+					<artifact name="validation-api" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="536613" time="14343" location="/home/jonathan/.ivy2/cache/javax.validation/validation-api/docs/validation-api-1.1.0.Final-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-javadoc.jar"/>
 					</artifact>
-					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="94671" time="0" location="/home/jonathan/.ivy2/cache/javax.validation/validation-api/srcs/validation-api-1.1.0.Final-sources.jar">
+					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="94671" time="3232" location="/home/jonathan/.ivy2/cache/javax.validation/validation-api/srcs/validation-api-1.1.0.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -174,10 +176,10 @@
 				<metadata-artifact status="no" details="" size="5623" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml/classmate/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/classmate/1.3.1/classmate-1.3.1.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="classmate" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="280872" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml/classmate/docs/classmate-1.3.1-javadoc.jar">
+					<artifact name="classmate" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="280872" time="1465" location="/home/jonathan/.ivy2/cache/com.fasterxml/classmate/docs/classmate-1.3.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/classmate/1.3.1/classmate-1.3.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="classmate" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="47331" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml/classmate/srcs/classmate-1.3.1-sources.jar">
+					<artifact name="classmate" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="47331" time="902" location="/home/jonathan/.ivy2/cache/com.fasterxml/classmate/srcs/classmate-1.3.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/classmate/1.3.1/classmate-1.3.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -189,10 +191,10 @@
 				<metadata-artifact status="no" details="" size="3325" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.12/2.6.3/filters-helpers_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="filters-helpers_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="45736" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/srcs/filters-helpers_2.12-2.6.3-sources.jar">
+					<artifact name="filters-helpers_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="45736" time="819" location="/home/jonathan/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/srcs/filters-helpers_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.12/2.6.3/filters-helpers_2.12-2.6.3-sources.jar"/>
 					</artifact>
-					<artifact name="filters-helpers_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1038888" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/docs/filters-helpers_2.12-2.6.3-javadoc.jar">
+					<artifact name="filters-helpers_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1038888" time="1141" location="/home/jonathan/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/docs/filters-helpers_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.12/2.6.3/filters-helpers_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -204,10 +206,10 @@
 				<metadata-artifact status="no" details="" size="3183" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-core/ivy-4.3.9.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="4.3.9.RELEASE" rev-constraint-default="4.3.9.RELEASE" rev-constraint-dynamic="4.3.9.RELEASE" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="spring-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1465719" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-core/docs/spring-core-4.3.9.RELEASE-javadoc.jar">
+					<artifact name="spring-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1465719" time="1192" location="/home/jonathan/.ivy2/cache/org.springframework/spring-core/docs/spring-core-4.3.9.RELEASE-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE-javadoc.jar"/>
 					</artifact>
-					<artifact name="spring-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="734958" time="0" location="/home/jonathan/.ivy2/cache/org.springframework/spring-core/srcs/spring-core-4.3.9.RELEASE-sources.jar">
+					<artifact name="spring-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="734958" time="971" location="/home/jonathan/.ivy2/cache/org.springframework/spring-core/srcs/spring-core-4.3.9.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -219,10 +221,10 @@
 				<metadata-artifact status="no" details="" size="3081" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-logback_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.12/2.6.3/play-logback_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-logback_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5877" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-logback_2.12/srcs/play-logback_2.12-2.6.3-sources.jar">
+					<artifact name="play-logback_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="5877" time="741" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-logback_2.12/srcs/play-logback_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.12/2.6.3/play-logback_2.12-2.6.3-sources.jar"/>
 					</artifact>
-					<artifact name="play-logback_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="646119" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-logback_2.12/docs/play-logback_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-logback_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="646119" time="1042" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-logback_2.12/docs/play-logback_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.12/2.6.3/play-logback_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -234,10 +236,10 @@
 				<metadata-artifact status="no" details="" size="4795" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.12/2.6.3/play-java_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-java_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="729360" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java_2.12/docs/play-java_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-java_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="729360" time="850" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java_2.12/docs/play-java_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.12/2.6.3/play-java_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
-					<artifact name="play-java_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="29973" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java_2.12/srcs/play-java_2.12-2.6.3-sources.jar">
+					<artifact name="play-java_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="29973" time="768" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-java_2.12/srcs/play-java_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.12/2.6.3/play-java_2.12-2.6.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -249,10 +251,10 @@
 				<metadata-artifact status="no" details="" size="3366" time="0" location="/home/jonathan/.ivy2/cache/net.jodah/typetools/ivy-0.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/jodah/typetools/0.5.0/typetools-0.5.0.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="0.5.0" rev-constraint-default="0.5.0" rev-constraint-dynamic="0.5.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="typetools" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5619" time="0" location="/home/jonathan/.ivy2/cache/net.jodah/typetools/srcs/typetools-0.5.0-sources.jar">
+					<artifact name="typetools" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="5619" time="815" location="/home/jonathan/.ivy2/cache/net.jodah/typetools/srcs/typetools-0.5.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/jodah/typetools/0.5.0/typetools-0.5.0-sources.jar"/>
 					</artifact>
-					<artifact name="typetools" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="27304" time="0" location="/home/jonathan/.ivy2/cache/net.jodah/typetools/docs/typetools-0.5.0-javadoc.jar">
+					<artifact name="typetools" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="27304" time="826" location="/home/jonathan/.ivy2/cache/net.jodah/typetools/docs/typetools-0.5.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/jodah/typetools/0.5.0/typetools-0.5.0-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -264,10 +266,10 @@
 				<metadata-artifact status="no" details="" size="3537" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-server_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.12/2.6.3/play-server_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-server_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37543" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-server_2.12/srcs/play-server_2.12-2.6.3-sources.jar">
+					<artifact name="play-server_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="37543" time="840" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-server_2.12/srcs/play-server_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.12/2.6.3/play-server_2.12-2.6.3-sources.jar"/>
 					</artifact>
-					<artifact name="play-server_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="767194" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-server_2.12/docs/play-server_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-server_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="767194" time="1418" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-server_2.12/docs/play-server_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.12/2.6.3/play-server_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -279,10 +281,10 @@
 				<metadata-artifact status="no" details="" size="3598" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-guice_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-guice_2.12/2.6.3/play-guice_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-guice_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17981" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-guice_2.12/srcs/play-guice_2.12-2.6.3-sources.jar">
+					<artifact name="play-guice_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="17981" time="754" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-guice_2.12/srcs/play-guice_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-guice_2.12/2.6.3/play-guice_2.12-2.6.3-sources.jar"/>
 					</artifact>
-					<artifact name="play-guice_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="781140" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-guice_2.12/docs/play-guice_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-guice_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="781140" time="1635" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-guice_2.12/docs/play-guice_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-guice_2.12/2.6.3/play-guice_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -294,10 +296,10 @@
 				<metadata-artifact status="no" details="" size="5305" time="0" location="/home/jonathan/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.1.0/guice-assistedinject-4.1.0.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="guice-assistedinject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34008" time="0" location="/home/jonathan/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/srcs/guice-assistedinject-4.1.0-sources.jar">
+					<artifact name="guice-assistedinject" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="34008" time="2342" location="/home/jonathan/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/srcs/guice-assistedinject-4.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.1.0/guice-assistedinject-4.1.0-sources.jar"/>
 					</artifact>
-					<artifact name="guice-assistedinject" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="63695" time="0" location="/home/jonathan/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/docs/guice-assistedinject-4.1.0-javadoc.jar">
+					<artifact name="guice-assistedinject" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="63695" time="2188" location="/home/jonathan/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/docs/guice-assistedinject-4.1.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.1.0/guice-assistedinject-4.1.0-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -309,10 +311,10 @@
 				<metadata-artifact status="no" details="" size="5652" time="0" location="/home/jonathan/.ivy2/cache/com.google.inject/guice/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="guice" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="815966" time="0" location="/home/jonathan/.ivy2/cache/com.google.inject/guice/docs/guice-4.1.0-javadoc.jar">
+					<artifact name="guice" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="815966" time="2194" location="/home/jonathan/.ivy2/cache/com.google.inject/guice/docs/guice-4.1.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0-javadoc.jar"/>
 					</artifact>
-					<artifact name="guice" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="310663" time="0" location="/home/jonathan/.ivy2/cache/com.google.inject/guice/srcs/guice-4.1.0-sources.jar">
+					<artifact name="guice" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="310663" time="1230" location="/home/jonathan/.ivy2/cache/com.google.inject/guice/srcs/guice-4.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -324,7 +326,8 @@
 				<metadata-artifact status="no" details="" size="2417" time="0" location="/home/jonathan/.ivy2/cache/aopalliance/aopalliance/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="aopalliance" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21188" time="0" location="/home/jonathan/.ivy2/cache/aopalliance/aopalliance/srcs/aopalliance-1.0-sources.jar">
+					<artifact name="aopalliance" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="aopalliance" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="21188" time="1866" location="/home/jonathan/.ivy2/cache/aopalliance/aopalliance/srcs/aopalliance-1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -336,10 +339,10 @@
 				<metadata-artifact status="no" details="" size="7603" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.12/2.6.3/play_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="459555" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play_2.12/srcs/play_2.12-2.6.3-sources.jar">
+					<artifact name="play_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="459555" time="1440" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play_2.12/srcs/play_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.12/2.6.3/play_2.12-2.6.3-sources.jar"/>
 					</artifact>
-					<artifact name="play_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="5405322" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play_2.12/docs/play_2.12-2.6.3-javadoc.jar">
+					<artifact name="play_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="5405322" time="64747" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play_2.12/docs/play_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.12/2.6.3/play_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -351,25 +354,25 @@
 				<metadata-artifact status="no" details="" size="2929" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="scala-parser-combinators_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43802" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/srcs/scala-parser-combinators_2.12-1.0.6-sources.jar">
+					<artifact name="scala-parser-combinators_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="43802" time="779" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/srcs/scala-parser-combinators_2.12-1.0.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6-sources.jar"/>
 					</artifact>
-					<artifact name="scala-parser-combinators_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1145733" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/docs/scala-parser-combinators_2.12-1.0.6-javadoc.jar">
+					<artifact name="scala-parser-combinators_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1145733" time="2765" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/docs/scala-parser-combinators_2.12-1.0.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6-javadoc.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="javax.inject" name="javax.inject">
-			<revision name="1" status="release" pubdate="20091013203500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+			<revision name="1" status="release" pubdate="20091013203500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2506" time="0" location="/home/jonathan/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="javax.inject" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="32609" time="0" location="/home/jonathan/.ivy2/cache/javax.inject/javax.inject/docs/javax.inject-1-javadoc.jar">
+					<artifact name="javax.inject" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="32609" time="832" location="/home/jonathan/.ivy2/cache/javax.inject/javax.inject/docs/javax.inject-1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar"/>
 					</artifact>
-					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10928" time="0" location="/home/jonathan/.ivy2/cache/javax.inject/javax.inject/srcs/javax.inject-1-sources.jar">
+					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10928" time="792" location="/home/jonathan/.ivy2/cache/javax.inject/javax.inject/srcs/javax.inject-1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -380,9 +383,10 @@
 				<metadata-artifact status="no" details="" size="2479" time="0" location="/home/jonathan/.ivy2/cache/javax.transaction/jta/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25014" time="0" location="/home/jonathan/.ivy2/cache/javax.transaction/jta/srcs/jta-1.1-sources.jar">
+					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="25014" time="1127" location="/home/jonathan/.ivy2/cache/javax.transaction/jta/srcs/jta-1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1-sources.jar"/>
 					</artifact>
+					<artifact name="jta" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 				</artifacts>
 			</revision>
 		</module>
@@ -392,10 +396,10 @@
 				<metadata-artifact status="no" details="" size="13392" time="0" location="/home/jonathan/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="3.6" rev-constraint-default="3.6" rev-constraint-dynamic="3.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="543262" time="0" location="/home/jonathan/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.6-sources.jar">
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="543262" time="862" location="/home/jonathan/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6-sources.jar"/>
 					</artifact>
-					<artifact name="commons-lang3" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1319475" time="0" location="/home/jonathan/.ivy2/cache/org.apache.commons/commons-lang3/docs/commons-lang3-3.6-javadoc.jar">
+					<artifact name="commons-lang3" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1319475" time="962" location="/home/jonathan/.ivy2/cache/org.apache.commons/commons-lang3/docs/commons-lang3-3.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -407,10 +411,10 @@
 				<metadata-artifact status="no" details="" size="5618" time="0" location="/home/jonathan/.ivy2/cache/io.jsonwebtoken/jjwt/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jjwt" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="515286" time="0" location="/home/jonathan/.ivy2/cache/io.jsonwebtoken/jjwt/docs/jjwt-0.7.0-javadoc.jar">
+					<artifact name="jjwt" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="515286" time="818" location="/home/jonathan/.ivy2/cache/io.jsonwebtoken/jjwt/docs/jjwt-0.7.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0-javadoc.jar"/>
 					</artifact>
-					<artifact name="jjwt" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="110342" time="0" location="/home/jonathan/.ivy2/cache/io.jsonwebtoken/jjwt/srcs/jjwt-0.7.0-sources.jar">
+					<artifact name="jjwt" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="110342" time="756" location="/home/jonathan/.ivy2/cache/io.jsonwebtoken/jjwt/srcs/jjwt-0.7.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -422,10 +426,10 @@
 				<metadata-artifact status="no" details="" size="7244" time="0" location="/home/jonathan/.ivy2/cache/com.google.guava/guava/ivy-22.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="22.0" rev-constraint-default="22.0" rev-constraint-dynamic="22.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1527071" time="0" location="/home/jonathan/.ivy2/cache/com.google.guava/guava/srcs/guava-22.0-sources.jar">
+					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1527071" time="1309" location="/home/jonathan/.ivy2/cache/com.google.guava/guava/srcs/guava-22.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0-sources.jar"/>
 					</artifact>
-					<artifact name="guava" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="6266391" time="0" location="/home/jonathan/.ivy2/cache/com.google.guava/guava/docs/guava-22.0-javadoc.jar">
+					<artifact name="guava" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="6266391" time="2973" location="/home/jonathan/.ivy2/cache/com.google.guava/guava/docs/guava-22.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -437,10 +441,10 @@
 				<metadata-artifact status="no" details="" size="4565" time="0" location="/home/jonathan/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/ivy-1.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.14" rev-constraint-default="1.14" rev-constraint-dynamic="1.14" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="animal-sniffer-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="36227" time="0" location="/home/jonathan/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/docs/animal-sniffer-annotations-1.14-javadoc.jar">
+					<artifact name="animal-sniffer-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="36227" time="749" location="/home/jonathan/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/docs/animal-sniffer-annotations-1.14-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14-javadoc.jar"/>
 					</artifact>
-					<artifact name="animal-sniffer-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1862" time="0" location="/home/jonathan/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/srcs/animal-sniffer-annotations-1.14-sources.jar">
+					<artifact name="animal-sniffer-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1862" time="766" location="/home/jonathan/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/srcs/animal-sniffer-annotations-1.14-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -452,10 +456,10 @@
 				<metadata-artifact status="no" details="" size="3174" time="0" location="/home/jonathan/.ivy2/cache/com.google.j2objc/j2objc-annotations/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="j2objc-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10481" time="0" location="/home/jonathan/.ivy2/cache/com.google.j2objc/j2objc-annotations/srcs/j2objc-annotations-1.1-sources.jar">
+					<artifact name="j2objc-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10481" time="741" location="/home/jonathan/.ivy2/cache/com.google.j2objc/j2objc-annotations/srcs/j2objc-annotations-1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1-sources.jar"/>
 					</artifact>
-					<artifact name="j2objc-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="68979" time="0" location="/home/jonathan/.ivy2/cache/com.google.j2objc/j2objc-annotations/docs/j2objc-annotations-1.1-javadoc.jar">
+					<artifact name="j2objc-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="68979" time="771" location="/home/jonathan/.ivy2/cache/com.google.j2objc/j2objc-annotations/docs/j2objc-annotations-1.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -467,12 +471,23 @@
 				<metadata-artifact status="no" details="" size="4020" time="0" location="/home/jonathan/.ivy2/cache/com.google.errorprone/error_prone_annotations/ivy-2.0.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.0.18" rev-constraint-default="2.0.18" rev-constraint-dynamic="2.0.18" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="error_prone_annotations" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="101187" time="0" location="/home/jonathan/.ivy2/cache/com.google.errorprone/error_prone_annotations/docs/error_prone_annotations-2.0.18-javadoc.jar">
+					<artifact name="error_prone_annotations" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="101187" time="4075" location="/home/jonathan/.ivy2/cache/com.google.errorprone/error_prone_annotations/docs/error_prone_annotations-2.0.18-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18-javadoc.jar"/>
 					</artifact>
-					<artifact name="error_prone_annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="22892" time="0" location="/home/jonathan/.ivy2/cache/com.google.errorprone/error_prone_annotations/srcs/error_prone_annotations-2.0.18-sources.jar">
+					<artifact name="error_prone_annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="22892" time="1037" location="/home/jonathan/.ivy2/cache/com.google.errorprone/error_prone_annotations/srcs/error_prone_annotations-2.0.18-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18-sources.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="1.3.9" status="release" pubdate="20090824192822" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2519" time="0" location="/home/jonathan/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-1.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom"/>
+				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jsr305" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
 				</artifacts>
 			</revision>
 		</module>
@@ -482,10 +497,10 @@
 				<metadata-artifact status="no" details="" size="4849" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-json_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.6.3/play-json_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-json_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1469053" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-json_2.12/docs/play-json_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-json_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1469053" time="1012" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-json_2.12/docs/play-json_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.6.3/play-json_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
-					<artifact name="play-json_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46976" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-json_2.12/srcs/play-json_2.12-2.6.3-sources.jar">
+					<artifact name="play-json_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="46976" time="764" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-json_2.12/srcs/play-json_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.6.3/play-json_2.12-2.6.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -497,10 +512,10 @@
 				<metadata-artifact status="no" details="" size="6647" time="0" location="/home/jonathan/.ivy2/cache/joda-time/joda-time/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1321922" time="0" location="/home/jonathan/.ivy2/cache/joda-time/joda-time/docs/joda-time-2.9.9-javadoc.jar">
+					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1321922" time="1223" location="/home/jonathan/.ivy2/cache/joda-time/joda-time/docs/joda-time-2.9.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-javadoc.jar"/>
 					</artifact>
-					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="778815" time="0" location="/home/jonathan/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="778815" time="987" location="/home/jonathan/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -512,10 +527,10 @@
 				<metadata-artifact status="no" details="" size="2964" time="0" location="/home/jonathan/.ivy2/cache/org.typelevel/macro-compat_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="macro-compat_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="637154" time="0" location="/home/jonathan/.ivy2/cache/org.typelevel/macro-compat_2.12/docs/macro-compat_2.12-1.1.1-javadoc.jar">
+					<artifact name="macro-compat_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="637154" time="1614" location="/home/jonathan/.ivy2/cache/org.typelevel/macro-compat_2.12/docs/macro-compat_2.12-1.1.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="macro-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1052" time="0" location="/home/jonathan/.ivy2/cache/org.typelevel/macro-compat_2.12/srcs/macro-compat_2.12-1.1.1-sources.jar">
+					<artifact name="macro-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1052" time="789" location="/home/jonathan/.ivy2/cache/org.typelevel/macro-compat_2.12/srcs/macro-compat_2.12-1.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -527,10 +542,10 @@
 				<metadata-artifact status="no" details="" size="2825" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.2/scala-reflect-2.12.2.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/"/>
 				<artifacts>
-					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="574818" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.2-sources.jar">
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="574818" time="793" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.2/scala-reflect-2.12.2-sources.jar"/>
 					</artifact>
-					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="5814215" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.12.2-javadoc.jar">
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="5814215" time="3146" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.12.2-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.2/scala-reflect-2.12.2-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -542,10 +557,10 @@
 				<metadata-artifact status="no" details="" size="2685" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-functional_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.6.3/play-functional_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-functional_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9853" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-functional_2.12/srcs/play-functional_2.12-2.6.3-sources.jar">
+					<artifact name="play-functional_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="9853" time="1742" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-functional_2.12/srcs/play-functional_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.6.3/play-functional_2.12-2.6.3-sources.jar"/>
 					</artifact>
-					<artifact name="play-functional_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="871521" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-functional_2.12/docs/play-functional_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-functional_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="871521" time="1634" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-functional_2.12/docs/play-functional_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.6.3/play-functional_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -569,10 +584,10 @@
 				<metadata-artifact status="no" details="" size="21226" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jackson-datatype-jsr310" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="62123" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/srcs/jackson-datatype-jsr310-2.8.9-sources.jar">
+					<artifact name="jackson-datatype-jsr310" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="62123" time="802" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/srcs/jackson-datatype-jsr310-2.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9-sources.jar"/>
 					</artifact>
-					<artifact name="jackson-datatype-jsr310" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="329220" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/docs/jackson-datatype-jsr310-2.8.9-javadoc.jar">
+					<artifact name="jackson-datatype-jsr310" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="329220" time="871" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/docs/jackson-datatype-jsr310-2.8.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.9/jackson-datatype-jsr310-2.8.9-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -584,25 +599,25 @@
 				<metadata-artifact status="no" details="" size="20932" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.9/jackson-datatype-jdk8-2.8.9.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jackson-datatype-jdk8" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="104509" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/docs/jackson-datatype-jdk8-2.8.9-javadoc.jar">
+					<artifact name="jackson-datatype-jdk8" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="104509" time="829" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/docs/jackson-datatype-jdk8-2.8.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.9/jackson-datatype-jdk8-2.8.9-javadoc.jar"/>
 					</artifact>
-					<artifact name="jackson-datatype-jdk8" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="20320" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/srcs/jackson-datatype-jdk8-2.8.9-sources.jar">
+					<artifact name="jackson-datatype-jdk8" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="20320" time="748" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/srcs/jackson-datatype-jdk8-2.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.9/jackson-datatype-jdk8-2.8.9-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
-			<revision name="2.8.9" status="release" pubdate="20170611215351" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+			<revision name="2.8.9" status="release" pubdate="20170611215351" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="8156" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="929913" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.8.9-sources.jar">
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="929913" time="1659" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9-sources.jar"/>
 					</artifact>
-					<artifact name="jackson-databind" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="4687015" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/docs/jackson-databind-2.8.9-javadoc.jar">
+					<artifact name="jackson-databind" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="4687015" time="3206" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/docs/jackson-databind-2.8.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -614,10 +629,10 @@
 				<metadata-artifact status="no" details="" size="6969" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="57660" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.8.9-sources.jar">
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="57660" time="2013" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9-sources.jar"/>
 					</artifact>
-					<artifact name="jackson-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="347609" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/docs/jackson-annotations-2.8.9-javadoc.jar">
+					<artifact name="jackson-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="347609" time="4888" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/docs/jackson-annotations-2.8.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -629,10 +644,10 @@
 				<metadata-artifact status="no" details="" size="7423" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.8.9" rev-constraint-default="2.8.9" rev-constraint-dynamic="2.8.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jackson-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="959316" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/docs/jackson-core-2.8.9-javadoc.jar">
+					<artifact name="jackson-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="959316" time="1823" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/docs/jackson-core-2.8.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9-javadoc.jar"/>
 					</artifact>
-					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="294668" time="0" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.8.9-sources.jar">
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="294668" time="1060" location="/home/jonathan/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -644,10 +659,10 @@
 				<metadata-artifact status="no" details="" size="2941" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/twirl-api_2.12/ivy-1.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.4/twirl-api_2.12-1.3.4.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.3.4" rev-constraint-default="1.3.4" rev-constraint-dynamic="1.3.4" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="twirl-api_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9386" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/twirl-api_2.12/srcs/twirl-api_2.12-1.3.4-sources.jar">
+					<artifact name="twirl-api_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="9386" time="749" location="/home/jonathan/.ivy2/cache/com.typesafe.play/twirl-api_2.12/srcs/twirl-api_2.12-1.3.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.4/twirl-api_2.12-1.3.4-sources.jar"/>
 					</artifact>
-					<artifact name="twirl-api_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="887723" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/twirl-api_2.12/docs/twirl-api_2.12-1.3.4-javadoc.jar">
+					<artifact name="twirl-api_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="887723" time="966" location="/home/jonathan/.ivy2/cache/com.typesafe.play/twirl-api_2.12/docs/twirl-api_2.12-1.3.4-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.4/twirl-api_2.12-1.3.4-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -656,13 +671,13 @@
 		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
 			<revision name="1.0.6" status="release" pubdate="20161101122105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
-				<metadata-artifact status="no" details="" size="2987" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.pom"/>
+				<metadata-artifact status="no" details="" size="3137" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="scala-xml_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109199" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.6-sources.jar">
+					<artifact name="scala-xml_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="109199" time="781" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar"/>
 					</artifact>
-					<artifact name="scala-xml_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1889415" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/docs/scala-xml_2.12-1.0.6-javadoc.jar">
+					<artifact name="scala-xml_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1889415" time="1484" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/docs/scala-xml_2.12-1.0.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -674,10 +689,10 @@
 				<metadata-artifact status="no" details="" size="4088" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-streams_2.12/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.12/2.6.3/play-streams_2.12-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-streams_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15355" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-streams_2.12/srcs/play-streams_2.12-2.6.3-sources.jar">
+					<artifact name="play-streams_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15355" time="747" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-streams_2.12/srcs/play-streams_2.12-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.12/2.6.3/play-streams_2.12-2.6.3-sources.jar"/>
 					</artifact>
-					<artifact name="play-streams_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="677824" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-streams_2.12/docs/play-streams_2.12-2.6.3-javadoc.jar">
+					<artifact name="play-streams_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="677824" time="1078" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-streams_2.12/docs/play-streams_2.12-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.12/2.6.3/play-streams_2.12-2.6.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -689,40 +704,40 @@
 				<metadata-artifact status="no" details="" size="3359" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.4/akka-stream_2.12-2.5.4.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="akka-stream_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3918252" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/docs/akka-stream_2.12-2.5.4-javadoc.jar">
+					<artifact name="akka-stream_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="3918252" time="2278" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/docs/akka-stream_2.12-2.5.4-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.4/akka-stream_2.12-2.5.4-javadoc.jar"/>
 					</artifact>
-					<artifact name="akka-stream_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="414074" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/srcs/akka-stream_2.12-2.5.4-sources.jar">
+					<artifact name="akka-stream_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="414074" time="936" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/srcs/akka-stream_2.12-2.5.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.4/akka-stream_2.12-2.5.4-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="ssl-config-core_2.12">
-			<revision name="0.2.1" status="release" pubdate="20161102113833" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+			<revision name="0.2.1" status="release" pubdate="20161102113833" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3613" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe/ssl-config-core_2.12/ivy-0.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.1/ssl-config-core_2.12-0.2.1.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="ssl-config-core_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1112443" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe/ssl-config-core_2.12/docs/ssl-config-core_2.12-0.2.1-javadoc.jar">
+					<artifact name="ssl-config-core_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1112443" time="8784" location="/home/jonathan/.ivy2/cache/com.typesafe/ssl-config-core_2.12/docs/ssl-config-core_2.12-0.2.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.1/ssl-config-core_2.12-0.2.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="ssl-config-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49384" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe/ssl-config-core_2.12/srcs/ssl-config-core_2.12-0.2.1-sources.jar">
+					<artifact name="ssl-config-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="49384" time="935" location="/home/jonathan/.ivy2/cache/com.typesafe/ssl-config-core_2.12/srcs/ssl-config-core_2.12-0.2.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.1/ssl-config-core_2.12-0.2.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.reactivestreams" name="reactive-streams">
-			<revision name="1.0.0" status="release" pubdate="20150429131454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+			<revision name="1.0.0" status="release" pubdate="20150429131454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
 				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
-				<metadata-artifact status="no" details="" size="2397" time="0" location="/home/jonathan/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.pom"/>
+				<metadata-artifact status="no" details="" size="2523" time="0" location="/home/jonathan/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="reactive-streams" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="32731" time="0" location="/home/jonathan/.ivy2/cache/org.reactivestreams/reactive-streams/docs/reactive-streams-1.0.0-javadoc.jar">
+					<artifact name="reactive-streams" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="32731" time="811" location="/home/jonathan/.ivy2/cache/org.reactivestreams/reactive-streams/docs/reactive-streams-1.0.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0-javadoc.jar"/>
 					</artifact>
-					<artifact name="reactive-streams" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3130" time="0" location="/home/jonathan/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.0-sources.jar">
+					<artifact name="reactive-streams" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3130" time="738" location="/home/jonathan/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -734,10 +749,10 @@
 				<metadata-artifact status="no" details="" size="2936" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-netty-utils/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.6.3/play-netty-utils-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-netty-utils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19229" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-netty-utils/srcs/play-netty-utils-2.6.3-sources.jar">
+					<artifact name="play-netty-utils" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="19229" time="849" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-netty-utils/srcs/play-netty-utils-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.6.3/play-netty-utils-2.6.3-sources.jar"/>
 					</artifact>
-					<artifact name="play-netty-utils" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="40595" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-netty-utils/docs/play-netty-utils-2.6.3-javadoc.jar">
+					<artifact name="play-netty-utils" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="40595" time="909" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-netty-utils/docs/play-netty-utils-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.6.3/play-netty-utils-2.6.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -746,13 +761,13 @@
 		<module organisation="org.slf4j" name="jcl-over-slf4j">
 			<revision name="1.7.25" status="release" pubdate="20170316133729" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
-				<metadata-artifact status="no" details="" size="5267" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.pom"/>
+				<metadata-artifact status="no" details="" size="5273" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jcl-over-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="106165" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/jcl-over-slf4j/docs/jcl-over-slf4j-1.7.25-javadoc.jar">
+					<artifact name="jcl-over-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="106165" time="1206" location="/home/jonathan/.ivy2/cache/org.slf4j/jcl-over-slf4j/docs/jcl-over-slf4j-1.7.25-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25-javadoc.jar"/>
 					</artifact>
-					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23239" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.25-sources.jar">
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23239" time="797" location="/home/jonathan/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.25-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -764,10 +779,10 @@
 				<metadata-artifact status="no" details="" size="2647" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/build-link/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.3/build-link-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="build-link" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="38488" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/build-link/docs/build-link-2.6.3-javadoc.jar">
+					<artifact name="build-link" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="38488" time="1132" location="/home/jonathan/.ivy2/cache/com.typesafe.play/build-link/docs/build-link-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.3/build-link-2.6.3-javadoc.jar"/>
 					</artifact>
-					<artifact name="build-link" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4245" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/build-link/srcs/build-link-2.6.3-sources.jar">
+					<artifact name="build-link" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4245" time="744" location="/home/jonathan/.ivy2/cache/com.typesafe.play/build-link/srcs/build-link-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.3/build-link-2.6.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -779,10 +794,10 @@
 				<metadata-artifact status="no" details="" size="2478" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.3/play-exceptions-2.6.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-exceptions" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="35979" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-exceptions/docs/play-exceptions-2.6.3-javadoc.jar">
+					<artifact name="play-exceptions" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="35979" time="919" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-exceptions/docs/play-exceptions-2.6.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.3/play-exceptions-2.6.3-javadoc.jar"/>
 					</artifact>
-					<artifact name="play-exceptions" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2291" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-exceptions/srcs/play-exceptions-2.6.3-sources.jar">
+					<artifact name="play-exceptions" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2291" time="742" location="/home/jonathan/.ivy2/cache/com.typesafe.play/play-exceptions/srcs/play-exceptions-2.6.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.3/play-exceptions-2.6.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -794,10 +809,10 @@
 				<metadata-artifact status="no" details="" size="3199" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.4/akka-slf4j_2.12-2.5.4.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="akka-slf4j_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="36995" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/docs/akka-slf4j_2.12-2.5.4-javadoc.jar">
+					<artifact name="akka-slf4j_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="36995" time="6820" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/docs/akka-slf4j_2.12-2.5.4-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.4/akka-slf4j_2.12-2.5.4-javadoc.jar"/>
 					</artifact>
-					<artifact name="akka-slf4j_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2488" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/srcs/akka-slf4j_2.12-2.5.4-sources.jar">
+					<artifact name="akka-slf4j_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2488" time="746" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/srcs/akka-slf4j_2.12-2.5.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.4/akka-slf4j_2.12-2.5.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -810,10 +825,10 @@
 				<metadata-artifact status="no" details="" size="10412" time="0" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="230201" time="0" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.2.3-sources.jar">
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="230201" time="816" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.2.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar"/>
 					</artifact>
-					<artifact name="logback-classic" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1045814" time="0" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-classic/docs/logback-classic-1.2.3-javadoc.jar">
+					<artifact name="logback-classic" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1045814" time="1116" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-classic/docs/logback-classic-1.2.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -822,13 +837,13 @@
 		<module organisation="org.slf4j" name="jul-to-slf4j">
 			<revision name="1.7.25" status="release" pubdate="20170316133746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
-				<metadata-artifact status="no" details="" size="5254" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.pom"/>
+				<metadata-artifact status="no" details="" size="5260" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4872" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.25-sources.jar">
+					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4872" time="758" location="/home/jonathan/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.25-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25-sources.jar"/>
 					</artifact>
-					<artifact name="jul-to-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="39936" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/jul-to-slf4j/docs/jul-to-slf4j-1.7.25-javadoc.jar">
+					<artifact name="jul-to-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="39936" time="756" location="/home/jonathan/.ivy2/cache/org.slf4j/jul-to-slf4j/docs/jul-to-slf4j-1.7.25-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -836,29 +851,30 @@
 		</module>
 		<module organisation="org.slf4j" name="slf4j-api">
 			<revision name="1.7.25" status="release" pubdate="20170316133632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
-				<metadata-artifact status="no" details="" size="5287" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5199" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="248922" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/slf4j-api/docs/slf4j-api-1.7.25-javadoc.jar">
+					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="248922" time="806" location="/home/jonathan/.ivy2/cache/org.slf4j/slf4j-api/docs/slf4j-api-1.7.25-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-javadoc.jar"/>
 					</artifact>
-					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55539" time="0" location="/home/jonathan/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar">
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55539" time="815" location="/home/jonathan/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-core">
-			<revision name="1.2.3" status="release" pubdate="20170331162715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+			<revision name="1.2.3" status="release" pubdate="20170331162715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="7917" time="0" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="logback-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1975248" time="0" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-core/docs/logback-core-1.2.3-javadoc.jar">
+					<artifact name="logback-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1975248" time="19142" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-core/docs/logback-core-1.2.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-javadoc.jar"/>
 					</artifact>
-					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="399141" time="0" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.2.3-sources.jar">
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="399141" time="1961" location="/home/jonathan/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.2.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -870,55 +886,55 @@
 				<metadata-artifact status="no" details="" size="2956" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.4/akka-actor_2.12-2.5.4.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="akka-actor_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="4364920" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/docs/akka-actor_2.12-2.5.4-javadoc.jar">
+					<artifact name="akka-actor_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="4364920" time="1956" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/docs/akka-actor_2.12-2.5.4-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.4/akka-actor_2.12-2.5.4-javadoc.jar"/>
 					</artifact>
-					<artifact name="akka-actor_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="518869" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.4-sources.jar">
+					<artifact name="akka-actor_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="518869" time="982" location="/home/jonathan/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.4/akka-actor_2.12-2.5.4-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-java8-compat_2.12">
-			<revision name="0.8.0" status="release" pubdate="20161029201227" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+			<revision name="0.8.0" status="release" pubdate="20161029201227" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="3036" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="scala-java8-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63853" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/srcs/scala-java8-compat_2.12-0.8.0-sources.jar">
+					<artifact name="scala-java8-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="63853" time="804" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/srcs/scala-java8-compat_2.12-0.8.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0-sources.jar"/>
 					</artifact>
-					<artifact name="scala-java8-compat_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1908047" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/docs/scala-java8-compat_2.12-0.8.0-javadoc.jar">
+					<artifact name="scala-java8-compat_2.12" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1908047" time="1669" location="/home/jonathan/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/docs/scala-java8-compat_2.12-0.8.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0-javadoc.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="config">
-			<revision name="1.3.1" status="release" pubdate="20160924095320" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+			<revision name="1.3.1" status="release" pubdate="20160924095320" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2875" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe/config/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="455570" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe/config/docs/config-1.3.1-javadoc.jar">
+					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="455570" time="1590" location="/home/jonathan/.ivy2/cache/com.typesafe/config/docs/config-1.3.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="170512" time="0" location="/home/jonathan/.ivy2/cache/com.typesafe/config/srcs/config-1.3.1-sources.jar">
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="170512" time="992" location="/home/jonathan/.ivy2/cache/com.typesafe/config/srcs/config-1.3.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.12.2" status="release" pubdate="20170413051911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="17">
+			<revision name="2.12.2" status="release" pubdate="20170413051911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="17">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/"/>
 				<artifacts>
-					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="30863154" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.2-javadoc.jar">
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="30863154" time="10915" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.2-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2-javadoc.jar"/>
 					</artifact>
-					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="990185" time="0" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.2-sources.jar">
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="990185" time="1148" location="/home/jonathan/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -945,10 +961,10 @@
 				<metadata-artifact status="no" details="" size="3199" time="0" location="/home/jonathan/.ivy2/cache/org.javassist/javassist/ivy-3.21.0-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.pom"/>
 				<caller organisation="com.example" name="e-diario$sources_javadoc_2.12" conf="compile-internal, compile, provided, optional" rev="3.21.0-GA" rev-constraint-default="3.21.0-GA" rev-constraint-dynamic="3.21.0-GA" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="javassist" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1802106" time="0" location="/home/jonathan/.ivy2/cache/org.javassist/javassist/docs/javassist-3.21.0-GA-javadoc.jar">
+					<artifact name="javassist" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1802106" time="1412" location="/home/jonathan/.ivy2/cache/org.javassist/javassist/docs/javassist-3.21.0-GA-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA-javadoc.jar"/>
 					</artifact>
-					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="524605" time="0" location="/home/jonathan/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.21.0-GA-sources.jar">
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="524605" time="976" location="/home/jonathan/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.21.0-GA-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA-sources.jar"/>
 					</artifact>
 				</artifacts>

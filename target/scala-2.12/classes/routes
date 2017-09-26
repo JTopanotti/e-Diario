@@ -3,8 +3,11 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.login()
+GET     /                           controllers.HomeController.index()
+GET     /login                      controllers.HomeController.login()
 POST    /login                      controllers.HomeController.postLogin()
+POST    /login                      controllers.HomeController.login()
+POST    /logout                     controllers.HomeController.logout()
 GET     /profile                    controllers.HomeController.perfil()
 
 # Map static resources from the /public folder to the /assets URL path

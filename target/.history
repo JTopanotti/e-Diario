@@ -25,3 +25,17 @@ compile
 run
 compile
 exit
+eclipse
+exit
+run
+compile
+test
+run
+exit
+compile
+run
+exit
+run
+exit
+run
+exit

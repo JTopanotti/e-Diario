@@ -30,11 +30,16 @@ public class HomeController extends Controller {
     	return ok(views.html.login.render(formularioLogin));
     }
     
+    public Result logout() {
+        return ok(views.html.index.render("Indice", false, null));
+    }
+    
     public Result perfil() {
-    	return ok("Perfil");
+    	return ok(views.html.index.render("PERFIL", false, null));
     }
     
     public Result postLogin() {
+    	System.out.println("TESTE");
     	formularioLogin = criadorFormulario.form(FormularioLogin.class).bindFromRequest();
     	if(formularioLogin.hasErrors()) {
     		flash("erro", "Credenciais de login invalidos");

@@ -1,0 +1,11 @@
+2017-09-25 21:24:31,319 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-3 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-25 21:24:31,535 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-25 21:24:31,543 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2017-09-25 21:24:38,659 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-9 - [CSRF] Check failed because no or invalid token found in body for /login
+2017-09-25 21:24:38,663 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-9 - [CSRF] Check failed with NoTokenInBody for /login
+2017-09-25 21:26:52,411 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-2 - Stopping server...

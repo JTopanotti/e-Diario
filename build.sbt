@@ -9,3 +9,4 @@ scalaVersion := "2.12.2"
 
 libraryDependencies += guice
 libraryDependencies += "org.webjars" % "bootstrap" % "3.3.6"
+TwirlKeys.templateImports += "modelos.InfoUsuario"
