@@ -9,7 +9,6 @@ import play.data.validation.Constraints.Validatable;
 @Validate
 public class UsuarioLogin implements Validatable<String> {
 	
-	@Required
     protected String usuario;
     protected String senha;
     

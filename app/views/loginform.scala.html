@@ -4,8 +4,8 @@
 
 @helper.form(action = routes.HomeController.postLogin()){
   <fieldset>
-    @helper.inputText(formulario("usuario"), 'id -> "usuario")
-    @helper.inputText(formulario("senha"), 'id -> "senha")
-    <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+    @helper.inputText(formulario("Usuario"), 'id -> "usuario")
+    @helper.inputText(formulario("Senha"), 'id -> "senha", 'type -> "password")
+    <input class="btn btn-lg btn-success" type="submit" value="Login">
   </fieldset>
 }
