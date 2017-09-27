@@ -15,7 +15,7 @@ public class Autenticacao extends Security.Authenticator {
 	
 	@Override
 	public Result onUnauthorized(Context ctx){
-		return redirect(routes.HomeController.login());
+		return redirect("/");
 	}
 	
 	public static String getUser(Context ctx) {

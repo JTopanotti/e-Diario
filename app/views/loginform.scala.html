@@ -1,15 +1,11 @@
-@(campoUsuario: Field, campoSenha: Field)
+@(formulario : Form[UsuarioLogin])
 
 <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap/css/bootstrap.css")">
 
-@helper.form(routes.HomeController.postLogin()){
+@helper.form(action = routes.HomeController.postLogin()){
   <fieldset>
-    <div class="form-group @if(campoUsuario.hasErrors) {has-error}" >
-      <input id="@campoUsuario.id" name="@campoUsuario.name" value="@campoUsuario.value.getOrElse("")" class="form-control" placeholder="Usuario" type="text">
-    </div>
-    <div class="form-group @if(campoSenha.hasErrors) {has-error}" >
-      <input id="@campoSenha.id" name="@campoSenha.name" value="@campoSenha.value.getOrElse("")" class="form-control" placeholder="Senha" type="password">
-    </div>
+    @helper.inputText(formulario("usuario"), 'id -> "usuario")
+    @helper.inputText(formulario("senha"), 'id -> "senha")
     <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
   </fieldset>
 }

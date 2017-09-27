@@ -4,7 +4,7 @@ import play.mvc.*;
 import play.data.DynamicForm;
 import play.data.Form;
 import play.data.FormFactory;
-import modelos.FormularioLogin;
+import modelos.UsuarioLogin;
 import modelos.InfoUsuarioDB;
 
 import javax.inject.*;
@@ -15,7 +15,7 @@ import javax.inject.*;
  */
 public class HomeController extends Controller {
 	
-	private static Form<FormularioLogin> formularioLogin;
+	private static Form<UsuarioLogin> formularioLogin;
 	
 	@Inject
 	FormFactory criadorFormulario;
@@ -25,28 +25,33 @@ public class HomeController extends Controller {
     }
     
     public Result login() {
+    	System.out.println("Login");
         InfoUsuarioDB.addUsuario("jonathan", "senha");
-    	formularioLogin = criadorFormulario.form(FormularioLogin.class);
+    	formularioLogin = criadorFormulario.form(UsuarioLogin.class);
     	return ok(views.html.login.render(formularioLogin));
     }
     
     public Result logout() {
+    	System.out.println("Logout");
         return ok(views.html.index.render("Indice", false, null));
     }
     
     public Result perfil() {
+    	System.out.println("Perfil");
     	return ok(views.html.index.render("PERFIL", false, null));
     }
     
     public Result postLogin() {
-    	System.out.println("TESTE");
-    	formularioLogin = criadorFormulario.form(FormularioLogin.class).bindFromRequest();
+    	System.out.println("PostLogin");
+    	formularioLogin = criadorFormulario.form(UsuarioLogin.class).bindFromRequest();
+    	
     	if(formularioLogin.hasErrors()) {
-    		flash("erro", "Credenciais de login invalidos");
+        	System.out.println("Has Errors");
+    		//flash("erro", "Credenciais de login invalidos");
     		return badRequest(views.html.login.render(formularioLogin));
     	} else {
-    		session().clear();
-    		session("usuario", formularioLogin.get().usuario);
+ /*   		session().clear();
+    		session("usuario", formularioLogin.get().getUsuario()); */
     		return redirect(routes.HomeController.perfil());
     	}
     	

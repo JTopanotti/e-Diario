@@ -1,4 +1,4 @@
-@(formularioLogin : Form[modelos.FormularioLogin])
+@(formularioLogin : Form[modelos.UsuarioLogin])
 
 <head>
     <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap/css/bootstrap.css")">
@@ -17,7 +17,7 @@
         <img class="img-responsive center-block" src="@routes.Assets.versioned("images/user2.png")" alt="Avatar" class="avatar">
     </div>
     <div class="container form-login text-center">
-    @loginform(formularioLogin("usuario"), formularioLogin("senha"))
+    @loginform(formularioLogin)
     </div>
 <!--<div class="container form-login text-center">
     <form>
