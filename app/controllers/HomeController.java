@@ -25,30 +25,26 @@ public class HomeController extends Controller {
     }
     
     public Result login() {
-    	System.out.println("Login");
         InfoUsuarioDB.addUsuario("jonathan", "senha");
     	formularioLogin = criadorFormulario.form(UsuarioLogin.class);
-    	return ok(views.html.login.render(formularioLogin));
+    	return ok(views.html.login.render("Login", false, null, formularioLogin));
     }
     
     public Result logout() {
-    	System.out.println("Logout");
         return ok(views.html.index.render("Indice", false, null));
     }
     
     public Result perfil() {
-    	System.out.println("Perfil");
     	return ok(views.html.index.render("PERFIL", false, null));
     }
     
     public Result postLogin() {
-    	System.out.println("PostLogin");
     	formularioLogin = criadorFormulario.form(UsuarioLogin.class).bindFromRequest();
     	
     	if(formularioLogin.hasErrors()) {
         	System.out.println("Has Errors");
     		//flash("erro", "Credenciais de login invalidos");
-    		return badRequest(views.html.login.render(formularioLogin));
+    		return badRequest(views.html.login.render("Login", false, null, formularioLogin));
     	} else {
  /*   		session().clear();
     		session("usuario", formularioLogin.get().getUsuario()); */
