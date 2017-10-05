@@ -6,7 +6,7 @@ import play.data.Form;
 import play.data.FormFactory;
 import modelos.UsuarioLogin;
 import modelos.InfoUsuarioDB;
-
+import modelos.ContextoExecucao;
 import javax.inject.*;
 
 /**
@@ -16,9 +16,14 @@ import javax.inject.*;
 public class HomeController extends Controller {
 	
 	private static Form<UsuarioLogin> formularioLogin;
+	private ContextoExecucao meuContexto;
 	
 	@Inject
 	FormFactory criadorFormulario;
+	
+	public HomeController(ContextoExecucao contexto) {
+		this.meuContexto = contexto;
+	}	
 
     public Result index() {
         return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx()),  
