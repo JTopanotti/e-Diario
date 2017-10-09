@@ -4,9 +4,13 @@ import play.mvc.*;
 import play.data.DynamicForm;
 import play.data.Form;
 import play.data.FormFactory;
+import play.db.*;
 import modelos.UsuarioLogin;
 import modelos.InfoUsuarioDB;
 import modelos.ContextoExecucao;
+
+import java.sql.SQLException;
+
 import javax.inject.*;
 
 /**
@@ -17,12 +21,20 @@ public class HomeController extends Controller {
 	
 	private static Form<UsuarioLogin> formularioLogin;
 	private ContextoExecucao meuContexto;
+	private Database minhaConexao;
 	
 	@Inject
 	FormFactory criadorFormulario;
 	
+	@Inject
 	public HomeController(ContextoExecucao contexto) {
-		this.meuContexto = contexto;
+		//this.meuContexto = contexto;
+		minhaConexao = Databases.createFrom("playdb", "org.postgresql.Driver", "jdbc:postgresql://127.0.0.1:5432/playdb?user=jonathan&password=j09o12n43");
+		try { 
+			String test = minhaConexao.getConnection().isValid(5) ? "VALID" : "NOT VALID";
+			System.out.print("SCHEMA: " + test);
+		}
+		catch(SQLException e) {System.err.print("DEU BAD");}
 	}	
 
     public Result index() {
