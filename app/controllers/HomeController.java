@@ -8,9 +8,10 @@ import play.db.*;
 import modelos.UsuarioLogin;
 import modelos.InfoUsuarioDB;
 import modelos.ContextoExecucao;
-
+import java.sql.Connection;
 import java.sql.SQLException;
-
+import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.inject.*;
 
 /**
@@ -20,21 +21,29 @@ import javax.inject.*;
 public class HomeController extends Controller {
 	
 	private static Form<UsuarioLogin> formularioLogin;
-	private ContextoExecucao meuContexto;
-	private Database minhaConexao;
+	//private ContextoExecucao meuContexto;
+	private Connection conexaoPostgres;
 	
 	@Inject
 	FormFactory criadorFormulario;
 	
 	@Inject
 	public HomeController(ContextoExecucao contexto) {
-		//this.meuContexto = contexto;
-		minhaConexao = Databases.createFrom("playdb", "org.postgresql.Driver", "jdbc:postgresql://127.0.0.1:5432/playdb?user=jonathan&password=j09o12n43");
-		try { 
-			String test = minhaConexao.getConnection().isValid(5) ? "VALID" : "NOT VALID";
-			System.out.print("SCHEMA: " + test);
+		//meuContexto = contexto;
+		conexaoPostgres = Databases.createFrom("playdb", "org.postgresql.Driver", 
+				            "jdbc:postgresql://127.0.0.1:5432/playdb?user=jonathan&password=j09o12n43")
+							.getConnection();
+		try {
+			Statement execucao = conexaoPostgres.createStatement();
+			String query = "SELECT * FROM usuarios";
+			ResultSet resultados = execucao.executeQuery(query);
+			while(resultados.next()) {
+				System.out.println("Dados: " + resultados.getString(1) + " " + resultados.getString(2));
+			}
+		} catch(SQLException e) {
+			System.err.println("Error SQL: " + e);
 		}
-		catch(SQLException e) {System.err.print("DEU BAD");}
+		 
 	}	
 
     public Result index() {
