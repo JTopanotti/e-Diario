@@ -4,7 +4,7 @@
 		module="e-diario-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171012153832"
+		publication="20171013082232"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

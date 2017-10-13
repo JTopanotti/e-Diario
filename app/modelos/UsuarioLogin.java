@@ -34,7 +34,6 @@ public class UsuarioLogin implements Validatable<String> {
     
     @Override
     public String validate() {
-    	System.out.println("Usuario: " + usuario + " Senha: " + senha);
         if (!InfoUsuarioDB.autenticar(usuario, senha)) {
             // You could also return a key defined in conf/messages
         	System.out.println("Nao eutenticou	");
