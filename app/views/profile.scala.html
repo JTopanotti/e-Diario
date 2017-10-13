@@ -1,0 +1,36 @@
+@(pagina: String, estaLogado: Boolean, infoUsuario: InfoUsuario)
+
+@main(pagina, estaLogado, infoUsuario){
+    <div class="text-center">
+        <img class="img-responsive center-block" src="@routes.Assets.versioned("images/user2.png")" alt="Avatar" class="avatar">
+		<h2 style="margin-top: 20px; padding-top: 30px;">Bem vindo, Jonathan!</h2>
+		<h3>Av. Presidente prudente, S/N, São Luis - Criciuma</h3>
+    </div>
+    <div class="container  text-center">
+		<table class="table table-responsive">
+			<thead>
+				<tr>
+					<th class="col-md-3">Matéria</th>
+					<th class="col-sm-2">Média de notas</th>
+					<th class="col-sm-2">Média de faltas</th>
+				</tr>
+				<tbody>
+					<tr>
+						<td class="col-md-3">Portugues</td>
+						<td class="col-sm-2">7.5</td>
+						<td class="col-sm-2">98</td>
+					</tr>
+					<tr>
+						<td class="col-md-3">Matematica</td>
+						<td class="col-sm-2">8.6</td>
+						<td>96</td>
+					</tr>
+					<tr>
+						<td class="col-md-3">Geografia</td>
+						<td class="col-sm-2">6.4</td>
+						<td class="col-sm-2">78</td>
+					</tr>
+				</tbody>
+			</table>	
+    </div>
+}

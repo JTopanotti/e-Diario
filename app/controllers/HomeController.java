@@ -65,7 +65,7 @@ public class HomeController extends Controller {
     }
     
     public Result perfil() {
-    	return ok(views.html.index.render("PERFIL", Autenticacao.isLoggedIn(ctx()), 
+    	return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
     			                            Autenticacao.getInfoUsuario(ctx())));
     }
     
