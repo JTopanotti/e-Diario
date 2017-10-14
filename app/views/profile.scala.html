@@ -1,4 +1,4 @@
-@(pagina: String, estaLogado: Boolean, infoUsuario: InfoUsuario, nome: String, endereco: String, numero: Int, bairro: String, notas: Array[])
+@(pagina: String, estaLogado: Boolean, infoUsuario: InfoUsuario, nome: String, endereco: String, numero: Int, bairro: String, notas: Array[Float])
 
 @main(pagina, estaLogado, infoUsuario){
     <div class="text-center">
@@ -17,17 +17,17 @@
 				<tbody>
 					<tr>
 						<td class="col-md-3">Portugues</td>
-						<td class="col-sm-2">notas[0]</td>
+						<td class="col-sm-2">@notas(0)</td>
 						<td class="col-sm-2">98</td>
 					</tr>
 					<tr>
 						<td class="col-md-3">Matematica</td>
-						<td class="col-sm-2">notas[1]</td>
+						<td class="col-sm-2">@notas(1)</td>
 						<td>96</td>
 					</tr>
 					<tr>
 						<td class="col-md-3">Geografia</td>
-						<td class="col-sm-2">notas[2]</td>
+						<td class="col-sm-2">@notas(2)</td>
 						<td class="col-sm-2">78</td>
 					</tr>
 				</tbody>
