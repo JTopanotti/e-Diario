@@ -8,9 +8,13 @@ public class InfoUsuario {
 	private String bairro;
 	private Float[] notas;
 	
-	public InfoUsuario(String usuario, String senha) {
+	public InfoUsuario(String usuario, String senha, String endereco, int numero, String bairro, Float[] notas) {
 		this.setUsuario(usuario);
 		this.setSenha(senha);
+		this.setEndereco(endereco);
+		this.setBairro(bairro);
+		this.setNumero(numero);
+		this.setNotas(notas);
 	}
 
 	public String getUsuario() {
