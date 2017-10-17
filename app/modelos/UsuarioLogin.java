@@ -1,9 +1,6 @@
 package modelos;
 
-
-import play.data.validation.Constraints;
 import play.data.validation.Constraints.Validate;
-import play.data.validation.Constraints.Required;
 import play.data.validation.Constraints.Validatable;
 
 @Validate
