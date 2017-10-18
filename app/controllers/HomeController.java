@@ -1,12 +1,10 @@
 package controllers;
 
 import play.mvc.*;
-import play.data.DynamicForm;
 import play.data.Form;
 import play.data.FormFactory;
 import play.db.*;
 import modelos.UsuarioLogin;
-import modelos.InfoUsuarioDB;
 import modelos.ContextoExecucao;
 import java.sql.Connection;
 import java.sql.SQLException;

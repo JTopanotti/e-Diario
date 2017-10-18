@@ -5,8 +5,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import play.mvc.Result;
-
 public class ConexaoPostgres{
 	private static Connection conexao;
 
