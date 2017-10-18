@@ -19,15 +19,13 @@ import javax.inject.*;
 public class HomeController extends Controller {
 	
 	private static Form<UsuarioLogin> formularioLogin;
-	//private ContextoExecucao meuContexto;
 	private Connection conexaoPostgres;
 	
 	@Inject
 	FormFactory criadorFormulario;
 	
 	@Inject
-	public HomeController(ContextoExecucao contexto) {
-		//meuContexto = contexto;
+	public HomeController() {
 		conexaoPostgres = Databases.createFrom("playdb", "org.postgresql.Driver", 
 				            "jdbc:postgresql://127.0.0.1:5432/playdb?user=jonathan&password=j09o12n43")
 							.getConnection();
@@ -84,9 +82,9 @@ public class HomeController extends Controller {
     }
     
     public Result postLogin() {
-    	formularioLogin = criadorFormulario.form(UsuarioLogin.class).bindFromRequest();
+    	//formularioLogin = criadorFormulario.form(UsuarioLogin.class).bindFromRequest();
     	
-    	if(formularioLogin.hasErrors()) {
+    	/*if(formularioLogin.hasErrors()) {
         	System.out.println("Has Errors");
     		flash("erro", "Credenciais de login invalidos");
     		return badRequest(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()),  
@@ -95,7 +93,9 @@ public class HomeController extends Controller {
     		session().clear();
     		session("usuario", formularioLogin.get().getUsuario()); 
     		return redirect(routes.HomeController.perfil());
-    	}
+    	} */
+		return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx()),
+				Autenticacao.getInfoUsuario(ctx())));
     	
     }
 

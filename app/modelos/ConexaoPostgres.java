@@ -13,7 +13,7 @@ public class ConexaoPostgres{
 		this.conexao = conexao;
 	}
 	
-	public InfoUsuario getUsuario(String usuario) {
+	public static InfoUsuario getUsuario(String usuario) {
 		ResultSet resultados;
     	int id = 0, numero = 0;
     	String nome = ".", endereco = ".", bairro = ".", observacoes = ".", senha = ".";

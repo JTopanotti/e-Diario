@@ -1,5 +1,6 @@
 package controllers;
 
+import modelos.ConexaoPostgres;
 import modelos.InfoUsuario;
 import play.mvc.Result;
 import play.mvc.Security;
@@ -26,6 +27,6 @@ public class Autenticacao extends Security.Authenticator {
 	}
 	
 	public static InfoUsuario getInfoUsuario(Context ctx) {
-		return (isLoggedIn(ctx) ? InfoUsuarioDB.getUsuario(getUser(ctx)) : null);
+		return (isLoggedIn(ctx) ? ConexaoPostgres.getUsuario(getUser(ctx)) : null);
 	}
 }
