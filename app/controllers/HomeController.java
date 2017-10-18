@@ -42,7 +42,6 @@ public class HomeController extends Controller {
     }
     
     public Result login() {
-        InfoUsuarioDB.addUsuario("jonas", "j09o12n43");
     	formularioLogin = criadorFormulario.form(UsuarioLogin.class);
     	return ok(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()),
     			                            Autenticacao.getInfoUsuario(ctx()), formularioLogin));

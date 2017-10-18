@@ -1,19 +1,21 @@
 package modelos;
 
 public class InfoUsuario {
+	private String nome;
 	private String usuario;
-	private String senha;
 	private String endereco;
 	private int numero;
 	private String bairro;
+	private String observacoes;
 	private Float[] notas;
 	
-	public InfoUsuario(String usuario, String senha, String endereco, int numero, String bairro, Float[] notas) {
+	public InfoUsuario(String nome, String usuario, String senha, String endereco, int numero, String bairro, String observacoes, Float[] notas) {
+		this.setNome(nome);
 		this.setUsuario(usuario);
-		this.setSenha(senha);
 		this.setEndereco(endereco);
 		this.setBairro(bairro);
 		this.setNumero(numero);
+		this.setObservacoes(observacoes);
 		this.setNotas(notas);
 	}
 
@@ -23,14 +25,6 @@ public class InfoUsuario {
 
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
-	}
-
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
 	}
 
 	public String getBairro() {
@@ -63,6 +57,22 @@ public class InfoUsuario {
 
 	public void setNotas(Float[] notas) {
 		this.notas = notas;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getObservacoes() {
+		return observacoes;
+	}
+
+	public void setObservacoes(String observacoes) {
+		this.observacoes = observacoes;
 	}
 	
 }
