@@ -36,7 +36,6 @@ public class UsuarioLogin implements Validatable<String> {
     public String validate() {
         if (!ConexaoPostgres.autenticar(usuario, senha)) {
             // You could also return a key defined in conf/messages
-            System.out.println("Nao eutenticou");
             return "Usuario e/ou senha errado(s)";
         }
         return null;
