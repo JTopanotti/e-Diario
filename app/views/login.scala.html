@@ -1,10 +1,10 @@
-@(pagina: String, estaLogado: Boolean, infoUsuario: InfoUsuario, formularioLogin : Form[modelos.UsuarioLogin])
+@(pagina: String, estaLogado: Boolean, formularioLogin : Form[modelos.UsuarioLogin], aluno: Boolean)
 
-@main(pagina, estaLogado, infoUsuario){
+@main(pagina, estaLogado){
     <div class="text-center">
         <img class="img-responsive center-block" src="@routes.Assets.versioned("images/user2.png")" alt="Avatar" class="avatar">
     </div>
     <div class="container form-login text-center">
-    @loginform(formularioLogin)
+    @loginform(formularioLogin, aluno)
     </div>
 }

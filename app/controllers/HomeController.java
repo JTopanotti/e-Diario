@@ -22,7 +22,6 @@ import play.mvc.Http.Context;
 public class HomeController extends Controller {
 	
 	private static Form<UsuarioLogin> formularioLogin;
-	//private Connection conexaoPostgres;
 	private ConexaoPostgres conexaoBD;
 
 	@Inject
@@ -36,31 +35,29 @@ public class HomeController extends Controller {
 	}	
 
     public Result index() {
-        return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx()),  
-        		                            Autenticacao.getInfoUsuario(ctx())));
+        return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx())));
     }
     
     public Result login() {
     	formularioLogin = criadorFormulario.form(UsuarioLogin.class);
-    	return ok(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()),
-    			                            Autenticacao.getInfoUsuario(ctx()), formularioLogin));
+    	return ok(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, true));
     }
 
     public Result loginProfessor() {
-		formularioLogin = ciradorFormulario.form(UsuarioLogin.class);
-		return ok(views.html.login)
+		formularioLogin = criadorFormulario.form(UsuarioLogin.class);
+		return ok(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, false));
 	}
 
     
     public Result logout() {
 		session().clear();
-        return ok(views.html.index.render("Home", Autenticacao.isLoggedIn(ctx()),  
-        		                            Autenticacao.getInfoUsuario(ctx())));
+        return ok(views.html.index.render("Home", Autenticacao.isLoggedIn(ctx())));
     }
     
     public Result perfil() {
+		String usuario = ctx().session().get("usuario");
 		return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
-		                                     Autenticacao.getInfoUsuario(ctx())));
+		                                     ConexaoPostgres.getAluno(usuario)));
     }
     
     public Result postLogin() {
@@ -69,16 +66,12 @@ public class HomeController extends Controller {
     	if(formularioLogin.hasErrors()) {
         	System.out.println("Has Errors");
     		flash("erro", "Credenciais de login invalidos");
-    		return badRequest(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()),  
-    				                                    Autenticacao.getInfoUsuario(ctx()), formularioLogin));
+    		return badRequest(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, true));
     	} else {
     		session().clear();
     		session("usuario", formularioLogin.get().getUsuario()); 
     		return redirect(routes.HomeController.perfil());
     	}
-		//return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx()),
-		//		Autenticacao.getInfoUsuario(ctx())));
-    	
     }
 
 }

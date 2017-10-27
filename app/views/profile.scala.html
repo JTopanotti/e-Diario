@@ -1,10 +1,10 @@
-@(pagina: String, estaLogado: Boolean, infoUsuario: InfoUsuario)
+@(pagina: String, estaLogado: Boolean, infoAluno: InfoAluno)
 
-@main(pagina, estaLogado, infoUsuario){
+@main(pagina, estaLogado){
     <div class="text-center">
         <img class="img-responsive center-block" src="@routes.Assets.versioned("images/user2.png")" alt="Avatar" class="avatar">
-		<h2>@infoUsuario.getNome()</h2>
-		<h3>@infoUsuario.getEndereco(), @infoUsuario.getNumero(), @infoUsuario.getBairro()</h3>
+		<h2>@infoAluno.getNome()</h2>
+		<h3>@infoAluno.getEndereco(), @infoAluno.getNumero(), @infoAluno.getBairro()</h3>
     </div>
     <div class="container  text-center">
 		<table class="table table-responsive">
@@ -17,17 +17,17 @@
 				<tbody>
 					<tr>
 						<td class="col-md-3">Portugues</td>
-						<td class="col-sm-2">@infoUsuario.getNotas()(0)</td>
+						<td class="col-sm-2">@infoAluno.getNotas()(0)</td>
 						<td class="col-sm-2">98</td>
 					</tr>
 					<tr>
 						<td class="col-md-3">Matematica</td>
-						<td class="col-sm-2">@infoUsuario.getNotas()(1)</td>
+						<td class="col-sm-2">@infoAluno.getNotas()(1)</td>
 						<td>96</td>
 					</tr>
 					<tr>
 						<td class="col-md-3">Geografia</td>
-						<td class="col-sm-2">@infoUsuario.getNotas()(2)</td>
+						<td class="col-sm-2">@infoAluno.getNotas()(2)</td>
 						<td class="col-sm-2">78</td>
 					</tr>
 				</tbody>

@@ -51,13 +51,39 @@ public class ConexaoPostgres{
 	public static InfoUsuario getUsuario(String usuario) {
 		criarConexao();
 		ResultSet resultados;
-    	int id = 0, numero = 0;
-    	String nome = ".", endereco = ".", bairro = ".", observacoes = ".", senha = ".";
-    	Float[] notas = {new Float(0), new Float(0), new Float(0)};
-    	try {
+		try{
 			Statement execucao = conexao.createStatement();
-			String query = "select * from public.alunos where username = '" + usuario + "';";
+			String query = "select COALESCE(\n" +
+					"\t(select nome from public.alunos where id_usuario = (select id from usuarios where username = \'"+ usuario +"\')),\n" +
+					"\t(select nome from public.professores where id_usuario = (select id from usuarios where username = \'"+ usuario +"\'))\n" +
+					"\t\n" +
+					") from public.usuarios;";
 			resultados = execucao.executeQuery(query);
+			fecharConexao();
+			return new InfoUsuario(resultados.getString(1), usuario);
+		} catch(SQLException e){
+			System.out.println("Error SQL: " + e);
+			fecharConexao();
+			return null;
+		}
+	}
+
+	public static InfoAluno getAluno(String usuario){
+		criarConexao();
+		ResultSet resultados;
+		int id = 0, numero = 0;
+		String nome = ".", endereco = ".", bairro = ".", observacoes = ".", senha = ".";
+		Float[] notas = {new Float(0), new Float(0), new Float(0)};
+		try {
+			Statement execucao = conexao.createStatement();
+			System.out.println("enter");
+			String query = "select id from public.usuarios where username = '" + usuario + "';";
+			resultados = execucao.executeQuery(query);
+			if(resultados.next()){id = resultados.getInt(1); }
+			System.out.println("ID " + id);
+			query = "select * from public.alunos where id = " + id + ";";
+			resultados = execucao.executeQuery(query);
+			System.out.println("UGULF");
 			if(resultados.next()) {
 				id = resultados.getShort(1);
 				nome = resultados.getString(2);
@@ -65,33 +91,32 @@ public class ConexaoPostgres{
 				numero = resultados.getInt(4);
 				bairro = resultados.getString(5);
 				observacoes = resultados.getString(6);
-				senha = resultados.getString(8);
+				notas[0] = resultados.getFloat(7);
+				notas[1] = resultados.getFloat(8);
+				notas[2] = resultados.getFloat(9);
 			}
-			query = "select * from public.notas where id_aluno = " + id + ";";
-			resultados = execucao.executeQuery(query);
-			if(resultados.next()) {
-				notas[0] = resultados.getFloat(2);
-				notas[1] = resultados.getFloat(3);
-				notas[2] = resultados.getFloat(4);
-			}
-    	} catch(SQLException e) {
-    		System.err.println("Error SQL: " + e);
-    	}
-    	return new InfoUsuario(nome, usuario, senha, endereco, numero, bairro, observacoes, notas);
+		} catch(SQLException e) {
+			System.err.println("Error SQL: " + e);
+		}
+		fecharConexao();
+		return new InfoAluno(nome, usuario, endereco, numero, bairro, observacoes, notas);
 	}
 
 	public static boolean autenticar(String usuario, String senha) {
 		criarConexao();
 		try {
 			Statement execucao = conexao.createStatement();
-			String query = "select password from public.alunos where username = '" + usuario + "';";
+			String query = "select password from public.usuarios where username = '" + usuario + "';";
 			ResultSet resultados = execucao.executeQuery(query);
-			String senha1 = "j09o12n43";
-			//return((resultados.getString(1)).compareTo(senha) == 0 ? true : false);
-			return true;
+			//fecharConexao();
+			if(resultados.next())
+				return((resultados.getString(1)).compareTo(senha) == 0 ? true : false);
+			else
+				return false;
 			
 		} catch(SQLException e) {
 			System.out.print("Errro SQL: " + e);
+			fecharConexao();
 			return false;
 		}
 
