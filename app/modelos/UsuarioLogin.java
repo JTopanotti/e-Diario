@@ -1,5 +1,6 @@
 package modelos;
 
+import controllers.HomeController;
 import play.data.validation.Constraints.Validate;
 import play.data.validation.Constraints.Validatable;
 import play.data.validation.ValidationError;
@@ -34,7 +35,7 @@ public class UsuarioLogin implements Validatable<String> {
     
     @Override
     public String validate() {
-        if (!ConexaoPostgres.autenticar(usuario, senha)) {
+        if (!HomeController.autenticar(usuario, senha)) {
             // You could also return a key defined in conf/messages
             return "Usuario e/ou senha errado(s)";
         }

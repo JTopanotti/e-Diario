@@ -22,7 +22,7 @@ import play.mvc.Http.Context;
 public class HomeController extends Controller {
 	
 	private static Form<UsuarioLogin> formularioLogin;
-	private ConexaoPostgres conexaoBD;
+	private static ConexaoPostgres conexaoBD;
 
 	@Inject
 	FormFactory criadorFormulario;
@@ -33,6 +33,10 @@ public class HomeController extends Controller {
 				"jdbc:postgresql://127.0.0.1:5432/playdb?user=jonathan&password=j09o12n43");
 		 
 	}	
+
+	public static boolean autenticar(String usuario, String senha){
+		return conexaoBD.autenticar(usuario, senha);
+	}
 
     public Result index() {
         return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx())));

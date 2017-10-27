@@ -49,7 +49,7 @@ public class ConexaoPostgres{
 	}
 	
 	public static InfoUsuario getUsuario(String usuario) {
-		criarConexao();
+		//criarConexao();
 		ResultSet resultados;
 		try{
 			Statement execucao = conexao.createStatement();
@@ -63,27 +63,24 @@ public class ConexaoPostgres{
 			return new InfoUsuario(resultados.getString(1), usuario);
 		} catch(SQLException e){
 			System.out.println("Error SQL: " + e);
-			fecharConexao();
+			//fecharConexao();
 			return null;
 		}
 	}
 
 	public static InfoAluno getAluno(String usuario){
-		criarConexao();
+		//criarConexao();
 		ResultSet resultados;
 		int id = 0, numero = 0;
 		String nome = ".", endereco = ".", bairro = ".", observacoes = ".", senha = ".";
 		Float[] notas = {new Float(0), new Float(0), new Float(0)};
 		try {
 			Statement execucao = conexao.createStatement();
-			System.out.println("enter");
 			String query = "select id from public.usuarios where username = '" + usuario + "';";
 			resultados = execucao.executeQuery(query);
 			if(resultados.next()){id = resultados.getInt(1); }
-			System.out.println("ID " + id);
-			query = "select * from public.alunos where id = " + id + ";";
+			query = "select * from public.alunos where id_usuario = " + id + ";";
 			resultados = execucao.executeQuery(query);
-			System.out.println("UGULF");
 			if(resultados.next()) {
 				id = resultados.getShort(1);
 				nome = resultados.getString(2);
@@ -97,30 +94,26 @@ public class ConexaoPostgres{
 			}
 		} catch(SQLException e) {
 			System.err.println("Error SQL: " + e);
-			fecharConexao();
+			//fecharConexao();
 		}
-		fecharConexao();
+		//fecharConexao();
 		return new InfoAluno(nome, usuario, endereco, numero, bairro, observacoes, notas);
 	}
 
 	public static boolean autenticar(String usuario, String senha) {
-		criarConexao();
+		//criarConexao();
 		try {
+			boolean autenticado = false;
 			Statement execucao = conexao.createStatement();
 			String query = "select password from public.usuarios where username = '" + usuario + "';";
 			ResultSet resultados = execucao.executeQuery(query);
-			boolean autenticado = (resultados.getString(1)).compareTo(senha) == 0 ? true : false;
-			if(resultados.next()) {
-				fecharConexao();
-				return autenticado;
-			}
-			else {
-				fecharConexao();
-				return false;
-			}
+			if(resultados.next())
+				autenticado = (resultados.getString(1)).compareTo(senha) == 0;
+			//fecharConexao();
+			return autenticado;
 		} catch(SQLException e) {
 			System.out.print("Errro SQL: " + e);
-			fecharConexao();
+			//fecharConexao();
 			return false;
 		}
 

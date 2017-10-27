@@ -6,6 +6,7 @@
 GET     /                           controllers.HomeController.index()
 GET     /login                      controllers.HomeController.login()
 GET     /logout                     controllers.HomeController.logout()
+GET     /login-prof                 controllers.HomeController.loginProfessor()
 +nocsrf
 POST    /login                      controllers.HomeController.postLogin()
 POST    /login                      controllers.HomeController.login()
