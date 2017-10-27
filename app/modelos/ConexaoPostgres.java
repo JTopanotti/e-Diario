@@ -97,6 +97,7 @@ public class ConexaoPostgres{
 			}
 		} catch(SQLException e) {
 			System.err.println("Error SQL: " + e);
+			fecharConexao();
 		}
 		fecharConexao();
 		return new InfoAluno(nome, usuario, endereco, numero, bairro, observacoes, notas);
@@ -108,12 +109,15 @@ public class ConexaoPostgres{
 			Statement execucao = conexao.createStatement();
 			String query = "select password from public.usuarios where username = '" + usuario + "';";
 			ResultSet resultados = execucao.executeQuery(query);
-			//fecharConexao();
-			if(resultados.next())
-				return((resultados.getString(1)).compareTo(senha) == 0 ? true : false);
-			else
+			boolean autenticado = (resultados.getString(1)).compareTo(senha) == 0 ? true : false;
+			if(resultados.next()) {
+				fecharConexao();
+				return autenticado;
+			}
+			else {
+				fecharConexao();
 				return false;
-			
+			}
 		} catch(SQLException e) {
 			System.out.print("Errro SQL: " + e);
 			fecharConexao();
