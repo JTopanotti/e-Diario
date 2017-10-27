@@ -1,12 +1,12 @@
 package modelos;
 
 public class InfoUsuario {
+	private String nome;
 	private String usuario;
-	private String senha;
 	
-	public InfoUsuario(String usuario, String senha) {
+	public InfoUsuario(String nome, String usuario/*, String senha, String endereco, int numero, String bairro, String observacoes, Float[] notas*/) {
+		this.setNome(nome);
 		this.setUsuario(usuario);
-		this.setSenha(senha);
 	}
 
 	public String getUsuario() {
@@ -17,12 +17,12 @@ public class InfoUsuario {
 		this.usuario = usuario;
 	}
 
-	public String getSenha() {
-		return senha;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setSenha(String senha) {
-		this.senha = senha;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 }

@@ -1,10 +1,10 @@
 package modelos;
 
-
-import play.data.validation.Constraints;
 import play.data.validation.Constraints.Validate;
-import play.data.validation.Constraints.Required;
 import play.data.validation.Constraints.Validatable;
+import play.data.validation.ValidationError;
+
+import javax.xml.bind.ValidationException;
 
 @Validate
 public class UsuarioLogin implements Validatable<String> {
@@ -34,12 +34,10 @@ public class UsuarioLogin implements Validatable<String> {
     
     @Override
     public String validate() {
-        if (!InfoUsuarioDB.autenticar(usuario, senha)) {
+        if (!ConexaoPostgres.autenticar(usuario, senha)) {
             // You could also return a key defined in conf/messages
-        	System.out.println("Nao eutenticou	");
             return "Usuario e/ou senha errado(s)";
         }
         return null;
-    } 
-
+    }
 }
