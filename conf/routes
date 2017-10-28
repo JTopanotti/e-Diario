@@ -8,10 +8,10 @@ GET     /login                      controllers.HomeController.login()
 GET     /logout                     controllers.HomeController.logout()
 GET     /login-prof                 controllers.HomeController.loginProfessor()
 +nocsrf
-POST    /login                      controllers.HomeController.postLogin()
+POST    /login                      controllers.HomeController.postLogin(aluno: Boolean ?= false)
 POST    /login                      controllers.HomeController.login()
 POST    /logout                     controllers.HomeController.logout()
-GET     /profile                    controllers.HomeController.perfil()
+GET     /profile                    controllers.HomeController.perfil(aluno: Boolean ?= false)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

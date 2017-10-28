@@ -1,6 +1,6 @@
 @(formulario : Form[UsuarioLogin], aluno : Boolean)
 
-@helper.form(action = routes.HomeController.postLogin()){
+@helper.form(action = routes.HomeController.postLogin(aluno)){
   <fieldset>
 	@if(flash.containsKey("erro")){
 	    @flash.get("erro")

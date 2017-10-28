@@ -58,23 +58,26 @@ public class HomeController extends Controller {
         return ok(views.html.index.render("Home", Autenticacao.isLoggedIn(ctx())));
     }
     
-    public Result perfil() {
+    public Result perfil(boolean aluno) {
 		String usuario = ctx().session().get("usuario");
-		return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
+		if(aluno)
+			return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
 		                                     ConexaoPostgres.getAluno(usuario)));
+		else
+			return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx())));
     }
     
-    public Result postLogin() {
+    public Result postLogin(boolean aluno) {
     	formularioLogin = criadorFormulario.form(UsuarioLogin.class).bindFromRequest();
     	
     	if(formularioLogin.hasErrors()) {
         	System.out.println("Has Errors");
     		flash("erro", "Credenciais de login invalidos");
-    		return badRequest(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, true));
+			return badRequest(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, aluno));
     	} else {
     		session().clear();
-    		session("usuario", formularioLogin.get().getUsuario()); 
-    		return redirect(routes.HomeController.perfil());
+    		session("usuario", formularioLogin.get().getUsuario());
+			return redirect(routes.HomeController.perfil(aluno));
     	}
     }
 
