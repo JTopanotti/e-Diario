@@ -1,13 +1,11 @@
 package controllers;
 
-import modelos.ConexaoPostgres;
-import modelos.InfoUsuario;
+import modelos.*;
 import play.mvc.*;
 import play.data.Form;
 import play.data.FormFactory;
 import play.db.*;
-import modelos.UsuarioLogin;
-import modelos.ContextoExecucao;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.ResultSet;
@@ -63,8 +61,10 @@ public class HomeController extends Controller {
 		if(aluno)
 			return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
 		                                     ConexaoPostgres.getAluno(usuario)));
-		else
-			return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx())));
+		else {
+			InfoAluno[] alunos = conexaoBD.;
+			return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), alunos));
+		}
     }
     
     public Result postLogin(boolean aluno) {

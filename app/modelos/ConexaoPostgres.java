@@ -68,6 +68,16 @@ public class ConexaoPostgres{
 		}
 	}
 
+	public InfoAluno[] getAlunos(String professor){
+		int quant_alunos;
+
+		try{
+			Statement execucao = conexao.createStatement();
+			String query = "select count(*)";
+		}
+
+	}
+
 	public static InfoAluno getAluno(String usuario){
 		//criarConexao();
 		ResultSet resultados;
