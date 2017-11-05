@@ -62,7 +62,7 @@ public class HomeController extends Controller {
 			return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
 		                                     ConexaoPostgres.getAluno(usuario)));
 		else {
-			InfoAluno[] alunos = conexaoBD.;
+			InfoAluno[] alunos = conexaoBD.getAlunos(usuario);
 			return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), alunos));
 		}
     }

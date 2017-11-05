@@ -4,8 +4,7 @@ public class InfoUsuario {
 	private String nome;
 	private String usuario;
 	
-	public InfoUsuario(String nome, String usuario/*, String senha, String endereco, int numero, String bairro, String observacoes, Float[] notas*/) {
-		this.setNome(nome);
+	public InfoUsuario(String nome, String usuario){
 		this.setUsuario(usuario);
 	}
 

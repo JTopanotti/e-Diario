@@ -1,10 +1,13 @@
 package modelos;
 
 import play.db.Databases;
+
+import javax.sound.midi.MidiDevice;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class ConexaoPostgres{
 	private static String nome_bd = "playdb";
@@ -48,33 +51,52 @@ public class ConexaoPostgres{
 		}
 	}
 	
-	public static InfoUsuario getUsuario(String usuario) {
-		//criarConexao();
-		ResultSet resultados;
-		try{
-			Statement execucao = conexao.createStatement();
-			String query = "select COALESCE(\n" +
-					"\t(select nome from public.alunos where id_usuario = (select id from usuarios where username = \'"+ usuario +"\')),\n" +
-					"\t(select nome from public.professores where id_usuario = (select id from usuarios where username = \'"+ usuario +"\'))\n" +
-					"\t\n" +
-					") from public.usuarios;";
-			resultados = execucao.executeQuery(query);
-			fecharConexao();
-			return new InfoUsuario(resultados.getString(1), usuario);
-		} catch(SQLException e){
-			System.out.println("Error SQL: " + e);
-			//fecharConexao();
-			return null;
-		}
-	}
+	/*public InfoUsuario getUsuario(String usuario) {
+	    int codigo = getCodigoUsuario(usuario);
+	    if(codigo > 0)
+	        return new InfoUsuario(codigo, usuario);
+	    else
+	        return null;
+	} */
+
+	private int getCodigoUsuario(String usuario){
+	    Statement execucao;
+	    String query;
+	    ResultSet resultados;
+        try{
+            execucao = conexao.createStatement();
+            query = "select id from usuarios where username = '" + usuario + "';";
+            resultados = execucao.executeQuery(query);
+            return resultados.getInt(1);
+
+        } catch(SQLException e){
+            System.out.println("Error SQL? " + e);
+            return 0;
+        }
+    }
 
 	public InfoAluno[] getAlunos(String professor){
 		int quant_alunos;
-
+		ArrayList<InfoAluno> alunos = new ArrayList<InfoAluno>();
+		Statement execucao;
+		String query;
+		ResultSet resultados;
 		try{
-			Statement execucao = conexao.createStatement();
-			String query = "select count(*)";
+			execucao = conexao.createStatement();
+			query = "select tipo, username from public.usuarios";
+			resultados = execucao.executeQuery(query);
+			while(resultados.next()){
+				if(resultados.getInt(1) == 0){
+					alunos.add(getAluno(resultados.getString(2)));
+				}
+			}
+
+		} catch(SQLException e) {
+			System.out.println("SQL Error:" + e);
+			return null;
 		}
+		InfoAluno[] alunos_array = new 	InfoAluno[alunos.size()];
+		return alunos.toArray(alunos_array);
 
 	}
 

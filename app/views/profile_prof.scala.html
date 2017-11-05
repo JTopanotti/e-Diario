@@ -3,7 +3,7 @@
 @main(pagina, estaLogado){
     @for(aluno <- alunos){
         <div id="main-block" class="container-fluid col-6">
-            <div><strong></strong></div>
+            <div><strong>@aluno.getNome()</strong></div>
             <div>Rua Presidente Prudente</div>
         </div>
     }
