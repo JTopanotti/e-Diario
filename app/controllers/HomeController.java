@@ -20,6 +20,7 @@ import play.mvc.Http.Context;
 public class HomeController extends Controller {
 	
 	private static Form<UsuarioLogin> formularioLogin;
+	private static Form<InfoAluno> informacoesAluno;
 	private static ConexaoPostgres conexaoBD;
 
 	@Inject
@@ -50,6 +51,10 @@ public class HomeController extends Controller {
 		return ok(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, false));
 	}
 
+	public Result editarPerfil(String usuario){
+		informacoesAluno = criadorFormulario.form(InfoAluno.class);
+		return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx()), informacoesAluno));
+	}
     
     public Result logout() {
 		session().clear();

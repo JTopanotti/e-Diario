@@ -25,9 +25,4 @@ public class Autenticacao extends Security.Authenticator {
 	public static boolean isLoggedIn(Context ctx) {
 		return (getUser(ctx) != null);
 	}
-
-	/*
-	public static InfoUsuario getInfoUsuario(Context ctx) {
-		return (isLoggedIn(ctx) ? ConexaoPostgres.getUsuario(getUser(ctx)) : null);
-	} */
 }

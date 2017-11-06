@@ -1,6 +1,13 @@
 package modelos;
 
-public class InfoAluno {
+import controllers.HomeController;
+import play.data.validation.Constraints.Validate;
+import play.data.validation.Constraints.Validatable;
+import play.data.validation.ValidationError;
+import javax.xml.bind.ValidationException;
+
+@Validate
+public class InfoAluno implements Validatable<String>{
     private String usuario;
     private String endereco;
     private int numero;
@@ -17,6 +24,12 @@ public class InfoAluno {
         this.setObservacoes(observacoes);
         this.setNotas(notas);
     }
+
+    @Override
+    public String validate(){
+        return "OK";
+    }
+
     public String getEndereco() {
         return endereco;
     }

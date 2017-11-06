@@ -1,0 +1,16 @@
+@(pagina: String, estaLogado: Boolean, formularioLogin : Form[modelos.InfoAluno])
+
+@main(pagina, estaLogado){
+    @helper.form(action = routes.HomeController.postEditar()){
+        <fieldset>
+            @if(flash.containsKey("erro")){
+                @flash.get("erro")
+            } else {
+                Bem Vindo!
+            }
+            @helper.inputText(formulario("Usuario"), 'id -> "usuario")
+            @helper.inputText(formulario("Senha"), 'id -> "senha", 'type -> "password")
+            <input class="btn btn-lg btn-success" type="submit" value="Login">
+        </fieldset>
+    }
+}

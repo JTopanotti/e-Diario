@@ -6,6 +6,11 @@ nav {
   margin-top: 50px;
 }
 
+.avatar{
+    border-radius: 50%;
+    height: 250px;
+}
+
 .bloco-aluno{
     margin-top: 20px;
     border: 2px solid #007bff;
@@ -14,6 +19,6 @@ nav {
 }
 
 .bloco-aluno a:link,.bloco-aluno a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
 }​

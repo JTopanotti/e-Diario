@@ -1,6 +1,10 @@
 @(pagina: String, estaLogado: Boolean, alunos: Array[InfoAluno])
 
 @main(pagina, estaLogado){
+    <!--<div class="text-center">
+        <img class="img-responsive center-block avatar" src="@routes.Assets.versioned("images/user.jpg")" alt="Avatar">
+    </div> -->
+    <h2 class="text-center">Escolhe <um></um> aluno para editar</h2>
     @for(aluno <- alunos){
         <div class="bloco-aluno container-fluid col-6">
             <a href="/editar/@aluno.getUsuario()">
