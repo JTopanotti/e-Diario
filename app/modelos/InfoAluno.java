@@ -15,6 +15,9 @@ public class InfoAluno implements Validatable<String>{
     private String observacoes;
     private Float[] notas;
 
+    public InfoAluno(){
+
+    }
     public InfoAluno(String nome, String usuario, String endereco, int numero, String bairro, String observacoes, Float[] notas) {
         this.setNome(nome);
         this.setUsuario(usuario);

@@ -11,6 +11,11 @@ nav {
     height: 250px;
 }
 
+.nav-professor {
+    background-color: #8cc051;
+    font-color: white !important;
+}
+
 .bloco-aluno{
     margin-top: 20px;
     border: 2px solid #007bff;

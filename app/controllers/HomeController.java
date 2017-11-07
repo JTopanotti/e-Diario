@@ -53,7 +53,7 @@ public class HomeController extends Controller {
 
 	public Result editarPerfil(String usuario){
 		informacoesAluno = criadorFormulario.form(InfoAluno.class);
-		return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx()), informacoesAluno));
+		return ok(views.html.editar_aluno.render("Indice", Autenticacao.isLoggedIn(ctx()), informacoesAluno));
 	}
     
     public Result logout() {
@@ -71,6 +71,10 @@ public class HomeController extends Controller {
 			return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), alunos));
 		}
     }
+
+    public Result postEditar(){
+		return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx())));
+	}
     
     public Result postLogin(boolean aluno) {
     	formularioLogin = criadorFormulario.form(UsuarioLogin.class).bindFromRequest();
