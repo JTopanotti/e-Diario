@@ -1,6 +1,6 @@
 @(pagina: String, estaLogado: Boolean, formulario: Form[modelos.InfoAluno])
 
-@main(pagina, estaLogado){
+@main(pagina, estaLogado, false){
     @helper.form(action = routes.HomeController.postEditar()){
         <fieldset class="text-center">
             @helper.inputText(formulario("Usuario"), 'id -> "usuario")

@@ -1,6 +1,6 @@
 @(pagina: String, estaLogado: Boolean, infoAluno: InfoAluno)
 
-@main(pagina, estaLogado){
+@main(pagina, estaLogado, true){
     <div class="text-center">
         <img class="img-responsive center-block avatar" src="@routes.Assets.versioned("images/user2.png")" alt="Avatar">
 		<h2>@infoAluno.getNome()</h2>

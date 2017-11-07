@@ -1,8 +1,12 @@
 @(pagina: String, estaLogado: Boolean, formularioLogin : Form[modelos.UsuarioLogin], aluno: Boolean)
 
-@main(pagina, estaLogado){
+@main(pagina, estaLogado, aluno){
     <div class="text-center">
-        <img class="img-responsive center-block avatar" src="@routes.Assets.versioned("images/question.png")" alt="Avatar">
+        @if(aluno){
+            <img class="img-responsive center-block avatar" src="@routes.Assets.versioned("images/question.png")" alt="Avatar">
+        } else {
+            <img class="img-responsive center-block avatar" src="@routes.Assets.versioned("images/question2.jpg")" alt="Avatar">
+        }
     </div>
     <div class="container form-login text-center">
     @loginform(formularioLogin, aluno)
