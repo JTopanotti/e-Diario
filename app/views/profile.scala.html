@@ -1,36 +1,110 @@
 @(pagina: String, estaLogado: Boolean, infoAluno: InfoAluno)
 
 @main(pagina, estaLogado, true){
-    <div class="text-center">
-        <img class="img-responsive center-block avatar" src="@routes.Assets.versioned("images/user2.png")" alt="Avatar">
-		<h2>@infoAluno.getNome()</h2>
-		<h3>@infoAluno.getEndereco(), @infoAluno.getNumero(), @infoAluno.getBairro()</h3>
-    </div>
-    <div class="container  text-center">
-		<table class="table table-responsive">
-			<thead>
+<div class="text-center">
+	<img class="img-responsive center-block" src="@routes.Assets.versioned("images/user2.png")" alt="Avatar" class="avatar">
+	<h2>@infoAluno.getNome()</h2>
+	<h3>@infoAluno.getEndereco(), @infoAluno.getNumero(), @infoAluno.getBairro()</h3>
+</div>
+
+<div class="container">
+	<ul class="nav nav-tabs" data-tabs="tabs">
+		<li><a data-toggle="tab" href="#trimestre1">1º Trimestre</a></li>
+		<li><a data-toggle="tab" href="#trimestre2">2º Trimestre</a></li>
+		<li><a data-toggle="tab" href="#trimestre3">3º Trimestre</a></li>
+	</ul>
+
+	<div class="tab-content" >
+		<div id="trimestre1" class="tab-pane fade">
+			<table class="table">
+				<thead>
 				<tr>
-					<th class="col-md-3">Matéria</th>
-					<th class="col-sm-2">Média de notas</th>
-					<th class="col-sm-2">Média de faltas</th>
+					<th width="90" class="text-center">Matéria</th>
+					<th width="65" class="text-center">Média notas</th>
+					<th width="85" class="text-center">Média faltas</th>
 				</tr>
+				</thead>
 				<tbody>
-					<tr>
-						<td class="col-md-3">Portugues</td>
-						<td class="col-sm-2">@infoAluno.getNotas()(0)</td>
-						<td class="col-sm-2">98</td>
-					</tr>
-					<tr>
-						<td class="col-md-3">Matematica</td>
-						<td class="col-sm-2">@infoAluno.getNotas()(1)</td>
-						<td>96</td>
-					</tr>
-					<tr>
-						<td class="col-md-3">Geografia</td>
-						<td class="col-sm-2">@infoAluno.getNotas()(2)</td>
-						<td class="col-sm-2">78</td>
-					</tr>
+				<tr>
+					<td>Português</td>
+					<td><a href="#">7.2</a></td>
+					<td><a href="#">10</a></td>
+				</tr>
+				<tr>
+					<td>Matemática</td>
+					<td><a href="#">8.9</a></td>
+					<td><a href="#">5</a></td>
+				</tr>
+				<tr>
+					<td>Geografia</td>
+					<td><a href="#">10</a></td>
+					<td><a href="#">8</a></td>
+				</tr>
 				</tbody>
-			</table>	
-    </div>
+			</table>
+		</div>
+	</div>
+
+	<div class="tab-content">
+		<div id="trimestre2" class="tab-pane fade">
+			<table class="table">
+				<thead>
+				<tr>
+					<th width="90" class="text-center">Matéria</th>
+					<th width="65" class="text-center">Média notas</th>
+					<th width="85" class="text-center">Média faltas</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Português</td>
+					<td><a href="#">8</a></td>
+					<td><a href="#">8</a></td>
+				</tr>
+				<tr>
+					<td>Matemática</td>
+					<td><a href="#">8</a></td>
+					<td><a href="#">10</a></td>
+				</tr>
+				<tr>
+					<td>Geografia</td>
+					<td><a href="#">8</a></td>
+					<td><a href="#">23</a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="tab-content">
+		<div id="trimestre3" class="tab-pane fade">
+			<table class="table">
+				<thead>
+				<tr>
+					<th width="90" class="text-center">Matéria</th>
+					<th width="65" class="text-center">Média notas</th>
+					<th width="85" class="text-center">Média faltas</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Português</td>
+					<td><a href="#">8</a></td>
+					<td><a href="#">45</a></td>
+				</tr>
+				<tr>
+					<td>Matemática</td>
+					<td><a href="#">10</a></td>
+					<td><a href="#">3</a></td>
+				</tr>
+				<tr>
+					<td>Geografia</td>
+					<td><a href="#">3</a></td>
+					<td><a href="#">23</a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
 }
