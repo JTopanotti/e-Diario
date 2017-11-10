@@ -100,7 +100,7 @@ public class ConexaoPostgres{
 
 	}
 
-	public static InfoAluno getAluno(String usuario){
+	public InfoAluno getAluno(String usuario){
 		//criarConexao();
 		ResultSet resultados;
 		int id = 0, numero = 0;

@@ -1,15 +1,17 @@
-@(pagina: String, estaLogado: Boolean, formulario: Form[modelos.InfoAluno])
+@(pagina: String, estaLogado: Boolean, aluno: InfoAluno, formulario: Form[modelos.InfoAluno])
 
 @main(pagina, estaLogado, false){
 
     @helper.form(action = routes.HomeController.postEditar()){
         <div class="container">
-        <fieldset class="text-center">
-            @helper.inputText(formulario("Observacoes"), 'id -> "observacoes")
-            @helper.inputText(formulario("Endereco"), 'id -> "endereco")
-            @helper.inputText(formulario("Numero"), 'id -> "numero")
-            <input class="btn btn-lg btn-success" type="submit" value="Login">
-        </fieldset>
+            <h2 class="text-primary">@aluno.getNome()</h2>
+            <fieldset>
+                @helper.inputText(formulario("Endereco"), 'id -> "endereco")
+                @helper.inputText(formulario("Bairro"), 'id -> "bairro")
+                @helper.inputText(formulario("Numero"), 'id -> "numero")
+                @helper.inputText(formulario("Observacoes"), 'id -> "observacoes", 'size -> 60)
+                <!--<input class="btn btn-lg btn-success" type="submit" value="Login">-->
+            </fieldset>
         </div>
         <ul class="nav nav-tabs justify-content-center" role="tab-list">
             <a class="nav-link active" href="#primeiro" role="tab" data-toggle="tab">Primeiro Trimestre</a>

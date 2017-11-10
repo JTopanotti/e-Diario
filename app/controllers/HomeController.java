@@ -52,8 +52,9 @@ public class HomeController extends Controller {
 	}
 
 	public Result editarPerfil(String usuario){
-		informacoesAluno = criadorFormulario.form(InfoAluno.class);
-		return ok(views.html.editar_aluno.render("Indice", Autenticacao.isLoggedIn(ctx()), informacoesAluno));
+		InfoAluno aluno = conexaoBD.getAluno(usuario);
+		informacoesAluno = criadorFormulario.form(InfoAluno.class).fill(aluno);
+		return ok(views.html.editar_aluno.render("Informacao", Autenticacao.isLoggedIn(ctx()), aluno, informacoesAluno));
 	}
     
     public Result logout() {
@@ -65,7 +66,7 @@ public class HomeController extends Controller {
 		String usuario = ctx().session().get("usuario");
 		if(aluno)
 			return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
-		                                     ConexaoPostgres.getAluno(usuario)));
+		                                     conexaoBD.getAluno(usuario)));
 		else {
 			InfoAluno[] alunos = conexaoBD.getAlunos(usuario);
 			return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), alunos));
