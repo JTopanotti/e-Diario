@@ -1,5 +1,6 @@
 @(title: String, estaLogado: Boolean, aluno: Boolean)(content: Html)
 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,18 +12,15 @@
         <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap/css/bootstrap.css")">
         <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap/css/bootstrap.min.css")">
 
+
     </head>
     <body>
       @if(aluno){
-        <nav class="navbar navbar-dark navbar-expand-lg bg-primary" style="color: #8cc051 !important">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
       } else {
         <nav class="navbar navbar-dark navbar-expand-lg nav-professor">
       }
         <a class="navbar-brand" href="/">e-Diario</a>
-        <!-- Descomentar para implementar em dispositivos moveis
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <!-- <li class="nav-item active">
@@ -38,9 +36,11 @@
         </div>
       </nav>
       @content
+      <script src="@routes.Assets.versioned("javascripts/main.js")"></script>
       <script src="@routes.Assets.versioned("javascripts/bootstrap/js/jquery.min.js")"></script>
       <script src="@routes.Assets.versioned("javascripts/bootstrap/js/popper.js")"></script>
       <script src="@routes.Assets.versioned("javascripts/bootstrap/js/bootstrap.js")"></script>
       <script src="@routes.Assets.versioned("javascripts/bootstrap/js/bootstrap.min.js")"></script>
+
     </body>
 </html>

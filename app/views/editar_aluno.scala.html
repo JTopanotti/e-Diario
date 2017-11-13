@@ -19,6 +19,7 @@
             <a class="nav-link" href="#terceiro" role="tab" data-toggle="tab">Terceiro Trimestre</a>
         </ul>
         <div class="tab-content">
+            <form id="notas">
             <div class="tab-pane fade show active text-center" id="primeiro" role="tabpanel">
                 <table class="table">
                     <thead>
@@ -31,18 +32,23 @@
                     <tbody>
                     <tr>
                         <td>Português</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5</a></td>
+                        <td>@aluno.getNota(1,1)</td><span>@helper.inputText(formulario(""), 'id -> "nota_1_portugues")</span>
+                        <td>@aluno.getFalta(1,1)</td>
                     </tr>
                     <tr>
                         <td>Matemática</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5</a></td>
+                        <td>@aluno.getNota(1,2)</td>
+                        <td>@aluno.getFalta(1,2)</td>
                     </tr>
                     <tr>
                         <td>Geografia</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5</a></td>
+                        <td>@aluno.getNota(1,3)</td>
+                        <td>@aluno.getFalta(1,3)</td>
+                    </tr>
+                    <tr>
+                        <td>Historia</td>
+                        <td>@aluno.getNota(1,4)</td>
+                        <td>@aluno.getFalta(1,4)</td>
                     </tr>
                     </tbody>
                 </table>
@@ -59,18 +65,24 @@
                     <tbody>
                     <tr>
                         <td>Português</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5</a></td>
+                        <!--<td><a href="#">@aluno.getNota(1,1)</a></td>-->
+                        <td>@aluno.getNota(2,1)</td>
+                        <td>@aluno.getFalta(2,1)</td>
                     </tr>
                     <tr>
                         <td>Matemática</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5</a></td>
+                        <td>@aluno.getNota(2,2)</td>
+                        <td>@aluno.getFalta(2,2)</td>
                     </tr>
                     <tr>
                         <td>Geografia</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5</a></td>
+                        <td>@aluno.getNota(2,3)</td>
+                        <td>@aluno.getFalta(2,3)</td>
+                    </tr>
+                    <tr>
+                        <td>Historia</td>
+                        <td>@aluno.getNota(2,4)</td>
+                        <td>@aluno.getFalta(2,4)</td>
                     </tr>
                     </tbody>
                 </table>
@@ -87,22 +99,30 @@
                     <tbody>
                     <tr>
                         <td>Português</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5</a></td>
+                        <!--<td><a href="#">@aluno.getNota(1,1)</a></td>-->
+                        <td>@aluno.getNota(3,1)</td>
+                        <td>@aluno.getFalta(3,1)</td>
                     </tr>
                     <tr>
                         <td>Matemática</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5/a></td>
+                        <td>@aluno.getNota(3,2)</td>
+                        <td>@aluno.getFalta(3,2)</td>
                     </tr>
                     <tr>
                         <td>Geografia</td>
-                        <td><a href="#">5</a></td>
-                        <td><a href="#">5</a></td>
+                        <td>@aluno.getNota(3,3)</td>
+                        <td>@aluno.getFalta(3,3)</td>
+                    </tr>
+                    <tr>
+                        <td>Historia</td>
+                        <td>@aluno.getNota(3,4)</td>
+                        <td>@aluno.getFalta(3,4)</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
+            <input class="btn btn-lg btn-success" type="submit" value="Login" id="atualizar">
+            </form>
         </div>
     }
 }

@@ -4,14 +4,8 @@ import modelos.*;
 import play.mvc.*;
 import play.data.Form;
 import play.data.FormFactory;
-import play.db.*;
-
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import play.routing.JavaScriptReverseRouter;
 import javax.inject.*;
-import play.mvc.Http.Context;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -31,7 +25,7 @@ public class HomeController extends Controller {
 		conexaoBD = new ConexaoPostgres("playdb", "org.postgresql.Driver",
 				"jdbc:postgresql://127.0.0.1:5432/playdb?user=jonathan&password=j09o12n43");
 		 
-	}	
+	}
 
 	public static boolean autenticar(String usuario, String senha){
 		return conexaoBD.autenticar(usuario, senha);
@@ -74,6 +68,7 @@ public class HomeController extends Controller {
     }
 
     public Result postEditar(){
+		System.out.println("HELLO");
 		return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx())));
 	}
     

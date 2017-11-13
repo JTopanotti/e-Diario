@@ -100,12 +100,51 @@ public class ConexaoPostgres{
 
 	}
 
+	private Float[][] getNotas(int id){
+		ResultSet resultados;
+		Float[][] notas = new Float[3][4];
+		try{
+			String query = "select * from public.notas where id_aluno = " + id + " order by 2;";
+			resultados = conexao.createStatement().executeQuery(query);
+			while(resultados.next()){
+				notas[resultados.getInt(2)-1][0] = resultados.getFloat(3);
+				notas[resultados.getInt(2)-1][1] = resultados.getFloat(4);
+				notas[resultados.getInt(2)-1][2] = resultados.getFloat(5);
+				notas[resultados.getInt(2)-1][3] = resultados.getFloat(6);
+			}
+		} catch (SQLException e){
+			System.out.println("SQL ERROR: " + e);
+			return null;
+		}
+		return notas;
+	}
+
+	private int[][] getFaltas(int id){
+		ResultSet resultados;
+		int[][] faltas = new int[3][4];
+		try{
+			String query = "select * from public.faltas where id_aluno = " + id + " order by 2;";
+			resultados = conexao.createStatement().executeQuery(query);
+			while(resultados.next()){
+				faltas[resultados.getInt(2)-1][0] = resultados.getInt(3);
+				faltas[resultados.getInt(2)-1][1] = resultados.getInt(4);
+				faltas[resultados.getInt(2)-1][2] = resultados.getInt(5);
+				faltas[resultados.getInt(2)-1][3] = resultados.getInt(6);
+			}
+		} catch (SQLException e){
+			System.out.println("SQL ERROR: " + e);
+			return null;
+		}
+		return faltas;
+	}
+
 	public InfoAluno getAluno(String usuario){
 		//criarConexao();
 		ResultSet resultados;
 		int id = 0, numero = 0;
 		String nome = ".", endereco = ".", bairro = ".", observacoes = ".", senha = ".";
-		Float[] notas = {new Float(0), new Float(0), new Float(0)};
+		Float[][] notas = new Float[3][4];
+		int[][] faltas = new int[3][4];
 		try {
 			Statement execucao = conexao.createStatement();
 			String query = "select id from public.usuarios where username = '" + usuario + "';";
@@ -115,21 +154,20 @@ public class ConexaoPostgres{
 			resultados = execucao.executeQuery(query);
 			if(resultados.next()) {
 				id = resultados.getShort(1);
+				notas = getNotas(id);
+				faltas = getFaltas(id);
 				nome = resultados.getString(2);
 				endereco = resultados.getString(3);
 				numero = resultados.getInt(4);
 				bairro = resultados.getString(5);
 				observacoes = resultados.getString(6);
-				notas[0] = resultados.getFloat(7);
-				notas[1] = resultados.getFloat(8);
-				notas[2] = resultados.getFloat(9);
 			}
 		} catch(SQLException e) {
 			System.err.println("Error SQL: " + e);
 			//fecharConexao();
 		}
 		//fecharConexao();
-		return new InfoAluno(nome, usuario, endereco, numero, bairro, observacoes, notas);
+		return new InfoAluno(nome, usuario, endereco, numero, bairro, observacoes, notas, faltas);
 	}
 
 	public static boolean autenticar(String usuario, String senha) {
