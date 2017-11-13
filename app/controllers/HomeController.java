@@ -56,19 +56,24 @@ public class HomeController extends Controller {
         return ok(views.html.index.render("Home", Autenticacao.isLoggedIn(ctx())));
     }
     
-    public Result perfil(boolean aluno) {
+    public Result perfil() {
 		String usuario = ctx().session().get("usuario");
-		if(aluno)
-			return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
+		return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
 		                                     conexaoBD.getAluno(usuario)));
-		else {
-			InfoAluno[] alunos = conexaoBD.getAlunos(usuario);
-			return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), alunos));
-		}
     }
 
+    public Result perfilProfessor(){
+		String usuario = ctx().session().get("usuario");
+		InfoAluno[] alunos = conexaoBD.getAlunos(usuario);
+		return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), alunos));
+	}
+
     public Result postEditar(){
-		System.out.println("HELLO");
+		informacoesAluno = criadorFormulario.form(InfoAluno.class).bindFromRequest();
+		InfoAluno aluno = informacoesAluno.get();
+		System.out.println("Nota: " + aluno.getNota_1_portugues());
+		conexaoBD.atualizarAluno(aluno);
+
 		return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx())));
 	}
     
@@ -82,7 +87,10 @@ public class HomeController extends Controller {
     	} else {
     		session().clear();
     		session("usuario", formularioLogin.get().getUsuario());
-			return redirect(routes.HomeController.perfil(aluno));
+    		if(aluno)
+				return redirect(routes.HomeController.perfil());
+    		else
+    			return redirect(routes.HomeController.perfilProfessor());
     	}
     }
 

@@ -1,110 +1,120 @@
-@(pagina: String, estaLogado: Boolean, infoAluno: InfoAluno)
+@(pagina: String, estaLogado: Boolean, aluno: InfoAluno)
 
 @main(pagina, estaLogado, true){
 <div class="text-center">
 	<img class="img-responsive center-block" src="@routes.Assets.versioned("images/user2.png")" alt="Avatar" class="avatar">
-	<h2>@infoAluno.getNome()</h2>
-	<h3>@infoAluno.getEndereco(), @infoAluno.getNumero(), @infoAluno.getBairro()</h3>
+	<h2>@aluno.getNome()</h2>
+	<h3>@aluno.getEndereco(), @aluno.getNumero(), @aluno.getBairro()</h3>
 </div>
-
+<div class="container text-center text-primary">
+	<h2>@aluno.getObservacoes</h2>
+</div>
 <div class="container">
-	<ul class="nav nav-tabs" data-tabs="tabs">
-		<li><a data-toggle="tab" href="#trimestre1">1º Trimestre</a></li>
-		<li><a data-toggle="tab" href="#trimestre2">2º Trimestre</a></li>
-		<li><a data-toggle="tab" href="#trimestre3">3º Trimestre</a></li>
+	<ul class="nav nav-tabs justify-content-center" role="tab-list">
+		<a class="nav-link active" href="#primeiro" role="tab" data-toggle="tab">Primeiro Trimestre</a>
+		<a class="nav-link" href="#segundo" role="tab" data-toggle="tab">Segundo Trimestre</a>
+		<a class="nav-link" href="#terceiro" role="tab" data-toggle="tab">Terceiro Trimestre</a>
 	</ul>
-
-	<div class="tab-content" >
-		<div id="trimestre1" class="tab-pane fade">
-			<table class="table">
-				<thead>
-				<tr>
-					<th width="90" class="text-center">Matéria</th>
-					<th width="65" class="text-center">Média notas</th>
-					<th width="85" class="text-center">Média faltas</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td>Português</td>
-					<td><a href="#">7.2</a></td>
-					<td><a href="#">10</a></td>
-				</tr>
-				<tr>
-					<td>Matemática</td>
-					<td><a href="#">8.9</a></td>
-					<td><a href="#">5</a></td>
-				</tr>
-				<tr>
-					<td>Geografia</td>
-					<td><a href="#">10</a></td>
-					<td><a href="#">8</a></td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-
 	<div class="tab-content">
-		<div id="trimestre2" class="tab-pane fade">
-			<table class="table">
-				<thead>
-				<tr>
-					<th width="90" class="text-center">Matéria</th>
-					<th width="65" class="text-center">Média notas</th>
-					<th width="85" class="text-center">Média faltas</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td>Português</td>
-					<td><a href="#">8</a></td>
-					<td><a href="#">8</a></td>
-				</tr>
-				<tr>
-					<td>Matemática</td>
-					<td><a href="#">8</a></td>
-					<td><a href="#">10</a></td>
-				</tr>
-				<tr>
-					<td>Geografia</td>
-					<td><a href="#">8</a></td>
-					<td><a href="#">23</a></td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-
-	<div class="tab-content">
-		<div id="trimestre3" class="tab-pane fade">
-			<table class="table">
-				<thead>
-				<tr>
-					<th width="90" class="text-center">Matéria</th>
-					<th width="65" class="text-center">Média notas</th>
-					<th width="85" class="text-center">Média faltas</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td>Português</td>
-					<td><a href="#">8</a></td>
-					<td><a href="#">45</a></td>
-				</tr>
-				<tr>
-					<td>Matemática</td>
-					<td><a href="#">10</a></td>
-					<td><a href="#">3</a></td>
-				</tr>
-				<tr>
-					<td>Geografia</td>
-					<td><a href="#">3</a></td>
-					<td><a href="#">23</a></td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
+			<div class="tab-pane fade show active text-center" id="primeiro" role="tabpanel">
+				<table class="table">
+					<thead>
+					<tr>
+						<th width="90" class="text-center">Matéria</th>
+						<th width="65" class="text-center">Média notas</th>
+						<th width="85" class="text-center">Média faltas</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Português</td>
+						<td>@aluno.getNota(1,1)</td>
+						<td>@aluno.getFalta(1,1)</td>
+					</tr>
+					<tr>
+						<td>Matemática</td>
+						<td>@aluno.getNota(1,2)</td>
+						<td>@aluno.getFalta(1,2)</td>
+					</tr>
+					<tr>
+						<td>Historia</td>
+						<td>@aluno.getNota(1,3)</td>
+						<td>@aluno.getFalta(1,3)</td>
+					</tr>
+					<tr>
+						<td>Geografia</td>
+						<td>@aluno.getNota(1,4)</td>
+						<td>@aluno.getFalta(1,4)</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="tab-pane fade text-center" id="segundo" role="tabpanel">
+				<table class="table">
+					<thead>
+					<tr>
+						<th width="90" class="text-center">Matéria</th>
+						<th width="65" class="text-center">Média notas</th>
+						<th width="85" class="text-center">Média faltas</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Português</td>
+						<td>@aluno.getNota(2,1)</td>
+						<td>@aluno.getFalta(2,1)</td>
+					</tr>
+					<tr>
+						<td>Matemática</td>
+						<td>@aluno.getNota(2,2)</td>
+						<td>@aluno.getFalta(2,2)</td>
+					</tr>
+					<tr>
+						<td>Historia</td>
+						<td>@aluno.getNota(2,3)</td>
+						<td>@aluno.getFalta(2,3)</td>
+					</tr>
+					<tr>
+						<td>Geografia</td>
+						<td>@aluno.getNota(2,4)</td>
+						<td>@aluno.getFalta(2,4)</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="tab-pane fade text-center" id="terceiro" role="tabpanel">
+				<table class="table">
+					<thead>
+					<tr>
+						<th width="90" class="text-center">Matéria</th>
+						<th width="65" class="text-center">Média notas</th>
+						<th width="85" class="text-center">Média faltas</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Português</td>
+						<td>@aluno.getNota(3,1)</td>
+						<td>@aluno.getFalta(3,1)</td>
+					</tr>
+					<tr>
+						<td>Matemática</td>
+						<td>@aluno.getNota(3,2)</td>
+						<td>@aluno.getFalta(3,2)</td>
+					</tr>
+					<tr>
+						<td>Historia</td>
+						<td>@aluno.getNota(3,3)</td>
+						<td>@aluno.getFalta(3,3)</td>
+					</tr>
+					<tr>
+						<td>Geografia</td>
+						<td>@aluno.getNota(3,4)</td>
+						<td>@aluno.getFalta(3,4)</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
 	</div>
 </div>
 }

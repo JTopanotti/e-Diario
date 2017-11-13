@@ -59,6 +59,34 @@ public class ConexaoPostgres{
 	        return null;
 	} */
 
+	public void atualizarAluno(InfoAluno aluno){
+		String query;
+		System.out.println("Nota: " + aluno.getNota_1_portugues());
+		aluno.atualizarNotasFaltas();
+		try{
+			query = "update public.alunos set endereco = '" + aluno.getEndereco() + "'," +
+					"numero = " + aluno.getNumero() + "," +
+					"bairro = '" + aluno.getBairro() + "'," +
+					"observacao = '" + aluno.getObservacoes() + "' where id_usuario = " + getCodigoUsuario(aluno.getUsuario());
+			System.out.println(query);
+			conexao.createStatement().execute(query);
+			for(int i = 0; i < 3; i++) {
+				query = "update public.notas set portugues = " + aluno.getNota(i + 1,1) + "," +
+						"matematica = " + aluno.getNota(i + 1,2) + "," +
+						"historia = " + aluno.getNota(i + 1, 3) + "," +
+						"geografia = " + aluno.getNota(i + 1, 4) + " where trimestre = " + (i + 1) + " and id_aluno = " + getCodigoUsuario(aluno.getUsuario()) + ";";
+				conexao.createStatement().execute(query);
+				query = "update public.faltas set portugues = " + aluno.getFalta(i + 1,1) + "," +
+						"matematica = " + aluno.getFalta(i + 1,2) + "," +
+						"historia = " + aluno.getFalta(i + 1, 3) + "," +
+						"geografia = " + aluno.getFalta(i + 1, 4) + " where trimestre = " + (i + 1) + " and id_aluno = " + getCodigoUsuario(aluno.getUsuario()) + ";";
+				conexao.createStatement().execute(query);
+			}
+		} catch (SQLException e){
+			System.out.println("SQL ERROR: " + e);
+		}
+	}
+
 	private int getCodigoUsuario(String usuario){
 	    Statement execucao;
 	    String query;
@@ -67,10 +95,13 @@ public class ConexaoPostgres{
             execucao = conexao.createStatement();
             query = "select id from usuarios where username = '" + usuario + "';";
             resultados = execucao.executeQuery(query);
-            return resultados.getInt(1);
+            if(resultados.next())
+            	return resultados.getInt(1);
+            else
+            	return 0;
 
         } catch(SQLException e){
-            System.out.println("Error SQL? " + e);
+            System.out.println("Error SQL: " + e);
             return 0;
         }
     }

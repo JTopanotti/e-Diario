@@ -6,10 +6,10 @@
         <div class="container">
             <h2 class="text-primary">@aluno.getNome()</h2>
             <fieldset>
-                @helper.inputText(formulario("Endereco"), 'id -> "endereco")
-                @helper.inputText(formulario("Bairro"), 'id -> "bairro")
-                @helper.inputText(formulario("Numero"), 'id -> "numero")
-                @helper.inputText(formulario("Observacoes"), 'id -> "observacoes", 'size -> 60)
+                @helper.inputText(formulario("endereco"), 'id -> "endereco")
+                @helper.inputText(formulario("bairro"), 'id -> "bairro")
+                @helper.inputText(formulario("numero"), 'id -> "numero")
+                @helper.inputText(formulario("observacoes"), 'id -> "observacoes", 'size -> 60)
                 <!--<input class="btn btn-lg btn-success" type="submit" value="Login">-->
             </fieldset>
         </div>
@@ -32,23 +32,31 @@
                     <tbody>
                     <tr>
                         <td>Português</td>
-                        <td>@aluno.getNota(1,1)</td><span>@helper.inputText(formulario(""), 'id -> "nota_1_portugues")</span>
-                        <td>@aluno.getFalta(1,1)</td>
+                        <!--<td>@aluno.getNota(1,1)</td>-->
+                        <!--<td>@aluno.getFalta(1,1)</td>-->
+                        <td>@helper.inputText(formulario("nota_1_portugues"), 'id -> "nota_1_portugues", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_1_portugues"), 'id -> "falta_1_portugues", 'size -> 3, '_label -> null)</td>
                     </tr>
                     <tr>
                         <td>Matemática</td>
-                        <td>@aluno.getNota(1,2)</td>
-                        <td>@aluno.getFalta(1,2)</td>
-                    </tr>
-                    <tr>
-                        <td>Geografia</td>
-                        <td>@aluno.getNota(1,3)</td>
-                        <td>@aluno.getFalta(1,3)</td>
+                        <!--<td>@aluno.getNota(1,2)</td>
+                        <td>@aluno.getFalta(1,2)</td>-->
+                        <td>@helper.inputText(formulario("nota_1_matematica"), 'id -> "nota_1_matematica", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_1_matematica"), 'id -> "falta_1_matematica", 'size -> 3, '_label -> null)</td>
                     </tr>
                     <tr>
                         <td>Historia</td>
-                        <td>@aluno.getNota(1,4)</td>
-                        <td>@aluno.getFalta(1,4)</td>
+                        <!--<td>@aluno.getNota(1,3)</td>
+                        <td>@aluno.getFalta(1,3)</td>-->
+                        <td>@helper.inputText(formulario("nota_1_historia"), 'id -> "nota_1_historia", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_1_historia"), 'id -> "falta_1_historia", 'size -> 3, '_label -> null)</td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <!--<td>@aluno.getNota(1,4)</td>
+                        <td>@aluno.getFalta(1,4)</td>-->
+                        <td>@helper.inputText(formulario("nota_1_geografia"), 'id -> "nota_1_geografia", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_1_geografia"), 'id -> "falta_1_geografia", 'size -> 3, '_label -> null)</td>
                     </tr>
                     </tbody>
                 </table>
@@ -65,24 +73,31 @@
                     <tbody>
                     <tr>
                         <td>Português</td>
-                        <!--<td><a href="#">@aluno.getNota(1,1)</a></td>-->
-                        <td>@aluno.getNota(2,1)</td>
-                        <td>@aluno.getFalta(2,1)</td>
+                        <!--<td>@aluno.getNota(1,1)</td>-->
+                        <!--<td>@aluno.getFalta(1,1)</td>-->
+                        <td>@helper.inputText(formulario("nota_2_portugues"), 'id -> "nota_2_portugues", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_2_portugues"), 'id -> "falta_2_portugues", 'size -> 3, '_label -> null)</td>
                     </tr>
                     <tr>
                         <td>Matemática</td>
-                        <td>@aluno.getNota(2,2)</td>
-                        <td>@aluno.getFalta(2,2)</td>
-                    </tr>
-                    <tr>
-                        <td>Geografia</td>
-                        <td>@aluno.getNota(2,3)</td>
-                        <td>@aluno.getFalta(2,3)</td>
+                        <!--<td>@aluno.getNota(1,2)</td>
+                        <td>@aluno.getFalta(1,2)</td>-->
+                        <td>@helper.inputText(formulario("nota_2_matematica"), 'id -> "nota_2_matematica", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_2_matematica"), 'id -> "falta_2_matematica", 'size -> 3, '_label -> null)</td>
                     </tr>
                     <tr>
                         <td>Historia</td>
-                        <td>@aluno.getNota(2,4)</td>
-                        <td>@aluno.getFalta(2,4)</td>
+                        <!--<td>@aluno.getNota(1,3)</td>
+                        <td>@aluno.getFalta(1,3)</td>-->
+                        <td>@helper.inputText(formulario("nota_2_historia"), 'id -> "nota_2_historia", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_2_historia"), 'id -> "falta_2_historia", 'size -> 3, '_label -> null)</td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <!--<td>@aluno.getNota(1,4)</td>
+                        <td>@aluno.getFalta(1,4)</td>-->
+                        <td>@helper.inputText(formulario("nota_2_geografia"), 'id -> "nota_2_geografia", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_2_geografia"), 'id -> "falta_2_geografia", 'size -> 3, '_label -> null)</td>
                     </tr>
                     </tbody>
                 </table>
@@ -99,29 +114,36 @@
                     <tbody>
                     <tr>
                         <td>Português</td>
-                        <!--<td><a href="#">@aluno.getNota(1,1)</a></td>-->
-                        <td>@aluno.getNota(3,1)</td>
-                        <td>@aluno.getFalta(3,1)</td>
+                        <!--<td>@aluno.getNota(1,1)</td>-->
+                        <!--<td>@aluno.getFalta(1,1)</td>-->
+                        <td>@helper.inputText(formulario("nota_3_portugues"), 'id -> "nota_3_portugues", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_3_portugues"), 'id -> "falta_3_portugues", 'size -> 3, '_label -> null)</td>
                     </tr>
                     <tr>
                         <td>Matemática</td>
-                        <td>@aluno.getNota(3,2)</td>
-                        <td>@aluno.getFalta(3,2)</td>
-                    </tr>
-                    <tr>
-                        <td>Geografia</td>
-                        <td>@aluno.getNota(3,3)</td>
-                        <td>@aluno.getFalta(3,3)</td>
+                        <!--<td>@aluno.getNota(1,2)</td>
+                        <td>@aluno.getFalta(1,2)</td>-->
+                        <td>@helper.inputText(formulario("nota_3_matematica"), 'id -> "nota_3_matematica", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_3_matematica"), 'id -> "falta_3_matematica", 'size -> 3, '_label -> null)</td>
                     </tr>
                     <tr>
                         <td>Historia</td>
-                        <td>@aluno.getNota(3,4)</td>
-                        <td>@aluno.getFalta(3,4)</td>
+                        <!--<td>@aluno.getNota(1,3)</td>
+                        <td>@aluno.getFalta(1,3)</td>-->
+                        <td>@helper.inputText(formulario("nota_3_historia"), 'id -> "nota_3_historia", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_3_historia"), 'id -> "falta_3_historia", 'size -> 3, '_label -> null)</td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <!--<td>@aluno.getNota(1,4)</td>
+                        <td>@aluno.getFalta(1,4)</td>-->
+                        <td>@helper.inputText(formulario("nota_3_geografia"), 'id -> "nota_3_geografia", 'size -> 3, '_label -> null)</td>
+                        <td>@helper.inputText(formulario("falta_3_geografia"), 'id -> "falta_3_geografia", 'size -> 3, '_label -> null)</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
-            <input class="btn btn-lg btn-success" type="submit" value="Login" id="atualizar">
+                <div class="text-center"><input class="btn btn-lg btn-success" type="submit" value="Atualizar" id="atualizar"></div>
             </form>
         </div>
     }

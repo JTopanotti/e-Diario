@@ -27,6 +27,11 @@
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li> -->
 			@if(estaLogado){
+              @if(aluno){
+                <li class="nav-item active"><a class="nav-link" href="/profile">Perfil</a></li>
+              } else {
+              <li class="nav-item active"><a class="nav-link" href="/profile-prof">Perfil</a></li>
+              }
               <li class="nav-item active"><a class="nav-link" href="/logout">Logout</a></li>
 			} else {
 			  <li class="nav-item active"><a class="nav-link" href="/login">Aluno</a></li>
