@@ -50,8 +50,8 @@ public class ConexaoPostgres{
 			System.out.println("SQL ERROR: " + e);
 		}
 	}
-	
-	/*public InfoUsuario getUsuario(String usuario) {
+	/*
+	public InfoUsuario getUsuario(String usuario) {
 	    int codigo = getCodigoUsuario(usuario);
 	    if(codigo > 0)
 	        return new InfoUsuario(codigo, usuario);
@@ -61,14 +61,13 @@ public class ConexaoPostgres{
 
 	public void atualizarAluno(InfoAluno aluno){
 		String query;
-		System.out.println("Nota: " + aluno.getNota_1_portugues());
 		aluno.atualizarNotasFaltas();
+		System.out.println("atualizarAluno: " + aluno.getBairro() + " " + aluno.getUsuario());
 		try{
 			query = "update public.alunos set endereco = '" + aluno.getEndereco() + "'," +
 					"numero = " + aluno.getNumero() + "," +
 					"bairro = '" + aluno.getBairro() + "'," +
 					"observacao = '" + aluno.getObservacoes() + "' where id_usuario = " + getCodigoUsuario(aluno.getUsuario());
-			System.out.println(query);
 			conexao.createStatement().execute(query);
 			for(int i = 0; i < 3; i++) {
 				query = "update public.notas set portugues = " + aluno.getNota(i + 1,1) + "," +
@@ -91,6 +90,7 @@ public class ConexaoPostgres{
 	    Statement execucao;
 	    String query;
 	    ResultSet resultados;
+	    System.out.println("Usuario: " + usuario);
         try{
             execucao = conexao.createStatement();
             query = "select id from usuarios where username = '" + usuario + "';";

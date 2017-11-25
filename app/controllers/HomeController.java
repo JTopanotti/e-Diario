@@ -71,10 +71,9 @@ public class HomeController extends Controller {
     public Result postEditar(){
 		informacoesAluno = criadorFormulario.form(InfoAluno.class).bindFromRequest();
 		InfoAluno aluno = informacoesAluno.get();
-		System.out.println("Nota: " + aluno.getNota_1_portugues());
+		System.out.println("postEditar: " + aluno.getBairro() + " " + aluno.getUsuario());
 		conexaoBD.atualizarAluno(aluno);
-
-		return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx())));
+		return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), conexaoBD.getAlunos(Autenticacao.getUser(ctx()))));
 	}
     
     public Result postLogin(boolean aluno) {
