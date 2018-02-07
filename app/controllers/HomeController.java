@@ -6,6 +6,7 @@ import play.data.Form;
 import play.data.FormFactory;
 import play.routing.JavaScriptReverseRouter;
 import javax.inject.*;
+import javax.persistence.*;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -16,15 +17,17 @@ public class HomeController extends Controller {
 	private static Form<UsuarioLogin> formularioLogin;
 	private static Form<InfoAluno> informacoesAluno;
 	private static ConexaoPostgres conexaoBD;
+	private static JPAApi jpaApi;
 
-	@Inject
-	FormFactory criadorFormulario;
+	//@Inject
+	private static FormFactory criadorFormulario;
 	
 	@Inject
-	public HomeController() {
+	public HomeController(FormFactory criadorFormulario, JPAApi jpaApi) {
+		this.criadorFormulario = criadorFormulario;
+		this.jpaApi = jpaApi;
 		conexaoBD = new ConexaoPostgres("playdb", "org.postgresql.Driver",
 				"jdbc:postgresql://127.0.0.1:5432/playdb?user=jonathan&password=j09o12n43");
-		 
 	}
 
 	public static boolean autenticar(String usuario, String senha){

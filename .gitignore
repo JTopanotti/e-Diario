@@ -9,4 +9,7 @@ logs/
 /logs/
 .idea/
 e-diario.iml
+*.txt
+test/
 >>>>>>> postgres
+
