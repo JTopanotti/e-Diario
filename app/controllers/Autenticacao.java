@@ -1,7 +1,5 @@
 package controllers;
 
-import modelos.ConexaoPostgres;
-import modelos.InfoUsuario;
 import play.mvc.Result;
 import play.mvc.Security;
 import play.mvc.Http.Context;
@@ -10,7 +8,7 @@ public class Autenticacao extends Security.Authenticator {
 	
 	@Override
 	public String getUsername(Context ctx) {
-		return ctx.session().get("usuario");
+		return ctx.session().get("username");
 	}
 	
 	@Override
@@ -19,7 +17,7 @@ public class Autenticacao extends Security.Authenticator {
 	}
 	
 	public static String getUser(Context ctx) {
-		return ctx.session().get("usuario");
+		return ctx.session().get("username");
 	}
 	
 	public static boolean isLoggedIn(Context ctx) {

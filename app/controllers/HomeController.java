@@ -1,99 +1,109 @@
 package controllers;
 
-import modelos.*;
+import models.*;
+import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.*;
 import play.data.Form;
 import play.data.FormFactory;
-import play.routing.JavaScriptReverseRouter;
 import javax.inject.*;
-import javax.persistence.*;
+
+import static play.libs.Json.toJson;
+import java.util.concurrent.CompletionStage;
+import java.util.stream.Collectors;
 
 /**
  * This controller contains an action to handle HTTP requests
  * to the application's home page.
  */
 public class HomeController extends Controller {
-	
-	private static Form<UsuarioLogin> formularioLogin;
+
+	private static Form<UserLogin> formularioLogin;sa
 	private static Form<InfoAluno> informacoesAluno;
-	private static ConexaoPostgres conexaoBD;
-	private static JPAApi jpaApi;
+	private final UserRepository userRepository;
+	private final HttpExecutionContext httpExecutionContext;
+	private final FormFactory formFactory;
 
-	//@Inject
-	private static FormFactory criadorFormulario;
-	
 	@Inject
-	public HomeController(FormFactory criadorFormulario, JPAApi jpaApi) {
-		this.criadorFormulario = criadorFormulario;
-		this.jpaApi = jpaApi;
-		conexaoBD = new ConexaoPostgres("playdb", "org.postgresql.Driver",
-				"jdbc:postgresql://127.0.0.1:5432/playdb?user=jonathan&password=j09o12n43");
-	}
-
-	public static boolean autenticar(String usuario, String senha){
-		return conexaoBD.autenticar(usuario, senha);
+	public HomeController(FormFactory cf, UserRepository ur, HttpExecutionContext ec) {
+		this.formFactory = cf;
+		this.userRepository = ur;
+		this.httpExecutionContext = ec;
 	}
 
     public Result index() {
         return ok(views.html.index.render("Indice", Autenticacao.isLoggedIn(ctx())));
     }
-    
+
     public Result login() {
-    	formularioLogin = criadorFormulario.form(UsuarioLogin.class);
+    	formularioLogin = formFactory.form(UserLogin.class);
     	return ok(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, true));
     }
 
     public Result loginProfessor() {
-		formularioLogin = criadorFormulario.form(UsuarioLogin.class);
+		formularioLogin = formFactory.form(UserLogin.class);
 		return ok(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, false));
 	}
 
 	public Result editarPerfil(String usuario){
 		InfoAluno aluno = conexaoBD.getAluno(usuario);
-		informacoesAluno = criadorFormulario.form(InfoAluno.class).fill(aluno);
+		informacoesAluno = formFactory.form(InfoAluno.class).fill(aluno);
 		return ok(views.html.editar_aluno.render("Informacao", Autenticacao.isLoggedIn(ctx()), aluno, informacoesAluno));
 	}
-    
+
     public Result logout() {
 		session().clear();
         return ok(views.html.index.render("Home", Autenticacao.isLoggedIn(ctx())));
     }
-    
+
     public Result perfil() {
-		String usuario = ctx().session().get("usuario");
+		String usuario = ctx().session().get("username");
 		return ok(views.html.profile.render("Perfil", Autenticacao.isLoggedIn(ctx()),
 		                                     conexaoBD.getAluno(usuario)));
     }
 
     public Result perfilProfessor(){
-		String usuario = ctx().session().get("usuario");
+		String usuario = ctx().session().get("username");
 		InfoAluno[] alunos = conexaoBD.getAlunos(usuario);
 		return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), alunos));
 	}
 
     public Result postEditar(){
-		informacoesAluno = criadorFormulario.form(InfoAluno.class).bindFromRequest();
+		informacoesAluno = formFactory.form(InfoAluno.class).bindFromRequest();
 		InfoAluno aluno = informacoesAluno.get();
 		System.out.println("postEditar: " + aluno.getBairro() + " " + aluno.getUsuario());
 		conexaoBD.atualizarAluno(aluno);
 		return ok(views.html.profile_prof.render("Perfil", Autenticacao.isLoggedIn(ctx()), conexaoBD.getAlunos(Autenticacao.getUser(ctx()))));
 	}
-    
+
     public Result postLogin(boolean aluno) {
-    	formularioLogin = criadorFormulario.form(UsuarioLogin.class).bindFromRequest();
-    	
+    	formularioLogin = formFactory.form(UserLogin.class).bindFromRequest();
+
     	if(formularioLogin.hasErrors()) {
         	System.out.println("Has Errors");
     		flash("erro", "Credenciais de login invalidos");
 			return badRequest(views.html.login.render("Login", Autenticacao.isLoggedIn(ctx()), formularioLogin, aluno));
     	} else {
     		session().clear();
-    		session("usuario", formularioLogin.get().getUsuario());
+    		session("username", formularioLogin.get().getUsername());
     		if(aluno)
 				return redirect(routes.HomeController.perfil());
     		else
     			return redirect(routes.HomeController.perfilProfessor());
     	}
     }
+
+    public CompletionStage<Result> addUser(){
+		User user = formFactory.form(User.class).bindFromRequest().get();
+		return userRepository.add(user).thenApplyAsync(u -> {
+			return redirect(routes.HomeController.index());
+		}, httpExecutionContext.current());
+	}
+
+	public CompletionStage<Result> getUsers(){
+		return userRepository.list().thenApplyAsync(userStream -> {
+			return ok(toJson(userStream.collect(Collectors.toList())));
+		}, httpExecutionContext.current());
+	}
+
 
 }
